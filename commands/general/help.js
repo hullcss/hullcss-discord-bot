@@ -38,7 +38,8 @@ module.exports = {
             .setTitle("General Comamnds")
             .setColor('GREEN')
 
-            .addField('-link', 'Sends a link to purchase membership')
+            .addField('-buy', 'Sends a link to purchase membership')
+            .addField('-links', 'Get all the links')
 
 
             message.channel.send({ embeds: [embed] });
