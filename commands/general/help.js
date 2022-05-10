@@ -18,8 +18,9 @@ module.exports = {
             .setColor('GREEN')
     
             .addField('❓`-help`','This Command', true)
-            .addField('🎉`-help admin`','Displays Admin Commands!', true)
+            .addField('🛠️`-help admin`','Displays Admin Commands!', true)
             .addField('ℹ️ `-help general`', 'Displays General Commands!', true)
+            .addField('🎉`-help fun`', 'Displays Fun Commands!', true)
             message.channel.send({ embeds: [embed] });
         }
     
@@ -40,6 +41,18 @@ module.exports = {
 
             .addField('-buy', 'Sends a link to purchase membership')
             .addField('-links', 'Get all the links')
+
+
+            message.channel.send({ embeds: [embed] });
+        }
+
+        if(args[0] === 'fun'){
+            const embed = new discord.MessageEmbed()
+            .setTitle("Fun Comamnds")
+            .setColor('GREEN')
+
+            .addField('-8ball', 'Answer your deepest questions.')
+            .addField('-gorb', 'guinea pig orb')
 
 
             message.channel.send({ embeds: [embed] });
