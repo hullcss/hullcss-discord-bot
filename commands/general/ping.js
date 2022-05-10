@@ -17,7 +17,7 @@ module.exports = {
   
 
         const embed = new MessageEmbed()
-        .setColor('ORANGE')
+        .setColor('GREEN')
         .setFooter(`Called By: ${message.author.tag}`)
         .setTimestamp()
         .setTitle("Ping")
