@@ -6,10 +6,9 @@ client.on('ready', () => {
     console.log('HullCSS is online')
     client.user.setActivity(`-help | hullcss.org` , {type:"WATCHING"})
 
-    const guild = client.guilds.cache.get('969944638498680872')
     setInterval(() =>{
-        const memberCount = client.guilds.cache.get('969944638498680872').memberCount
-        const channel = client.channels.cache.get('969944638981034014');
+        const memberCount = client.guilds.cache.get('427865794467069962').memberCount
+        const channel = client.channels.cache.get('906167542249308160');
         channel.setName(`Discord Members: ${memberCount.toLocaleString()}`);
     }, 600000);
 
