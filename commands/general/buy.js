@@ -2,7 +2,7 @@ const discord = require("discord.js");
 
 module.exports = {
     name: "buy",
-    aliases: [''],
+    aliases: ['paid'],
     /**
      *
      * @param {Client} client
