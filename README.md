@@ -8,11 +8,11 @@ This bot features multiple command types from:
 * General
 
 ### Todo
-[ ] Fix welcome message 
-[ ] Threaded new channel
-[ ] Better suggestion system
-[ ] Robotics and Freeside commands
+* [ ] Fix welcome message 
+* [ ] Threaded new channel
+* [ ] Better suggestion system
+* [ ] Robotics and Freeside commands
 
 ### Contributions
 While this bot is maintained by [Kieran](https://github.com/KieranRobson), contributors are welcome! 
-[ ] Contributing guidlines are coming soon!
+* [ ] Contributing guidlines are coming soon!
