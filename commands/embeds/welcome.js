@@ -24,11 +24,19 @@ module.exports = {
 
             const row = new discord.MessageActionRow()
 			.addComponents(
+                new discord.MessageButton()
+                .setURL('https://github.com/hullcss/conduct/')
+                .setEmoji('')
+                .setLabel('Code of Conduct')
+                .setStyle('LINK')
+            )
+            .addComponents(
 				new discord.MessageButton()
-					.setCustomId('codeOfConduct')
-					.setLabel('✅ I have read the code of conduct!')
-					.setStyle('SUCCESS'),
-			);
+                .setCustomId('codeOfConduct')
+                .setEmoji('✅')
+                .setLabel(' I have read the code of conduct!')
+                .setStyle('SUCCESS')
+            )
 
         message.channel.send({ embeds: [embed], components: [row] })
     },
