@@ -1,6 +1,7 @@
 const { glob } = require("glob");
 const { promisify } = require("util");
 const { Client } = require("discord.js");
+
 const globPromise = promisify(glob);
 
 /**
@@ -24,6 +25,8 @@ module.exports = async (client) => {
     const eventFiles = await globPromise(`${process.cwd()}/events/*.js`);
     eventFiles.map((value) => require(value));
 
+    // Slash Commands
+    const slashCommands = await globPromise(`${process.cwd()}/SlashCommands/*/*.js`);
     const arrayOfSlashCommands = [];
     slashCommands.map((value) => {
         const file = require(value);
@@ -36,10 +39,7 @@ module.exports = async (client) => {
     client.on("ready", async () => {
         // Register for a single guild
         await client.guilds.cache
-            .get("744586833135927366")
+            .get("427865794467069962")
             .commands.set(arrayOfSlashCommands);
-
-        // Register for all the guilds the bot is in
-        // await client.application.commands.set(arrayOfSlashCommands);
     });
 };
