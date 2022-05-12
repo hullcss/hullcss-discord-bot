@@ -4,7 +4,6 @@ const discord = require('discord.js');
 
 
 client.on('guildScheduledEventCreate', async guildScheduledEvent =>{
-    const guild = client.guilds.cache.get('427865794467069962');
     const channel = client.channels.cache.get('973686987787751534')
     const embed = new discord.MessageEmbed()
     .setColor('GREEN')
