@@ -1,8 +1,8 @@
 const discord = require("discord.js");
-const { Modal } = require('discord-modals') // Modal class
+const {  Modal, TextInputComponent, showModal } = require('discord-modals') // Modal class
 
 module.exports = {
-    name: "welcome",
+    name: "paidmember",
     aliases: [''],
     /**
      *
@@ -23,10 +23,10 @@ module.exports = {
             const row = new discord.MessageActionRow()
 			.addComponents(
                 new discord.MessageButton()
-                .setURL('https://github.com/hullcss/conduct/')
-                .setEmoji('')
+                .setCustomId('paidModal')
+                .setEmoji('💲')
                 .setLabel('Code of Conduct')
-                .setStyle('LINK')
+                .setStyle('PRIMARY')
             )
         message.channel.send({ embeds: [embed], components: [row] })
     },
