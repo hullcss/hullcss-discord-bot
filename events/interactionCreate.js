@@ -43,25 +43,33 @@ client.on("interactionCreate", async (interaction) => {
 
             if(interaction.customId == "paidModal")
             {
-                const modal = new ModalBuilder() // We create a Modal
-                .setCustomId('modal-paidmember')
-                .setTitle('Paid Member Discord Access')
-                .addComponents(
-                    new ModalField()
-                    .setLabel("Student Name")
-                    .setStyle("short")
-                    .setMin(1)
-                    .setPlaceholder("Joe Bloggs")
-                    .setCustomId("studentname"),
-                    new ModalField()
-                    .setLabel("Student Number")
-                    .setStyle("short")
-                    .setCustomId("studentnumber")
-                    .setMin(9)
-                    .setMin(9)
-                    .setPlaceholder("201801122")
-                    )
-                    client.modal.open(interaction, modal) 
+                if(interaction.member.roles.cache.has(`427878753008353292`))
+                {
+                    await interaction.deferReply({ ephemeral: true })
+                    interaction.followUp({ content: 'You already have the paid member role.', ephemeral: true })
+
+                } 
+                else{
+                    const modal = new ModalBuilder() // We create a Modal
+                    .setCustomId('modal-paidmember')
+                    .setTitle('Paid Member Discord Access')
+                    .addComponents(
+                        new ModalField()
+                        .setLabel("Student Name")
+                        .setStyle("short")
+                        .setMin(1)
+                        .setPlaceholder("Joe Bloggs")
+                        .setCustomId("studentname"),
+                        new ModalField()
+                        .setLabel("Student Number")
+                        .setStyle("short")
+                        .setCustomId("studentnumber")
+                        .setMin(9)
+                        .setMin(9)
+                        .setPlaceholder("201801122")
+                        )
+                        client.modal.open(interaction, modal) 
+                }
             }
 
             if(interaction.customId == "paidmemberdelete")
