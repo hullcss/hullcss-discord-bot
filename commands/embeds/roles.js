@@ -33,20 +33,24 @@ module.exports = {
                 value:"2",
             },
             {
-                label:"Third Year",
+                label:"Year In Industry",
                 value:"3",
             },
             {
-                label:"Masters",
+                label:"Third Year",
                 value:"4",
             },
             {
-                label:"PhD",
+                label:"Masters",
                 value:"5",
             },
             {
-                label:"Graduate",
+                label:"PhD",
                 value:"6",
+            },
+            {
+                label:"Graduate",
+                value:"7",
             },
         ])
         )
