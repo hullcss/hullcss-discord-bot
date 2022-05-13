@@ -41,8 +41,6 @@ module.exports = {
 
             .addField('-buy', 'Sends a link to purchase membership')
             .addField('-links', 'Get all the links')
-
-
             message.channel.send({ embeds: [embed] });
         }
 
@@ -57,22 +55,30 @@ module.exports = {
         }
 
         
-        if(args[0] === 'gorb'){
+        if(args[0] === 'fun'){
             const embed = new discord.MessageEmbed()
             .setTitle("Fun Comamnds")
             .setColor('GREEN')
-            .setDescription("All commands are followed by `-gorb` ")
+
+            .addField('-8ball', 'Answer your deepest questions.')
+            .addField('-gorb', 'guinea pig orb')
+            message.channel.send({ embeds: [embed] });
+        }
+
+        
+        if(args[0] === 'gorb'){
+            const embed = new discord.MessageEmbed()
+            .setTitle("Gorb Comamnds")
+            .setColor('GREEN')
             .addField('-gorb cs', 'CS Gorb')
             .addField('-gorb party', 'Party Gorb')
-            .addField('-gorb christmas', 'Christmas Gorb'
+            .addField('-gorb christmas', 'Christmas Gorb')
             .addField('-gorb storm', 'Storm Gorb')
-            )
 
             message.channel.send({ embeds: [embed] });
         }
 
-
-
+        
     }
 }
 
