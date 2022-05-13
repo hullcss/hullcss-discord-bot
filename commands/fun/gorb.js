@@ -19,7 +19,12 @@ module.exports = {
         }
 
         if(args[0] === 'party'){
-            message.channel.send({ files: ['./images/gorbcelebration.jpg'] })
+            message.channel.send({ files: ['./images/gorbcelebration.png'] })
+        }
+
+        
+        if(args[0] === 'christmas'){
+            message.channel.send({ files: ['./images/gorbchristmas.png'] })
         }
     },
 };
