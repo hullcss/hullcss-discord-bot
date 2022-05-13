@@ -99,7 +99,7 @@ module.exports = {
         .addComponents(
             new MessageSelectMenu()
             .setCustomId("bcsSelect")
-            .setPlaceholder("Select your pronouns")
+            .setPlaceholder("Select your BCS Status")
             .addOptions([
             {
                 label:"Student Member",
@@ -147,7 +147,7 @@ module.exports = {
         message.channel.send({content: "Select your roles.", components:[row1]})
         message.channel.send({content: "Select your pronouns.", components:[row2]})
         message.channel.send({content: "Select your BCS status", components:[row3]})
-        message.channel.send({content: "Select your Misc role", components:[row4]})
+        message.channel.send({content: "Select your Misc roles", components:[row4]})
 
 
     },
