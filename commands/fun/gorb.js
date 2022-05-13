@@ -26,5 +26,11 @@ module.exports = {
         if(args[0] === 'christmas'){
             message.channel.send({ files: ['./images/gorbchristmas.png'] })
         }
+
+        if(args[0] === 'storm'){
+            message.channel.send({ files: ['./images/gorbstorm.png'] })
+        }
+
+
     },
 };
