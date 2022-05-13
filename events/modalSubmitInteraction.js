@@ -11,8 +11,15 @@ client.on('modalSubmitInteraction', async (interaction) => {
         .addField('Discord Tag', `${ interaction.user}`)
         .addField('Student Name', `${ interaction.fields.getTextInputValue("studentname")}`)
         .addField('Student Number',`${ interaction.fields.getTextInputValue("studentnumber")}`)
-
-        execchannel.send({embeds: [embed] });
+        const row = new discord.MessageActionRow()
+        .addComponents(
+            new discord.MessageButton()
+            .setCustomId('paidmemberdelete')
+            .setEmoji('')
+            .setLabel('Delete Membership')
+            .setStyle('DANGER')
+        )
+        execchannel.send({embeds: [embed], rows: [row] });
         await interaction.deferReply({ ephemeral: true })
         interaction.followUp({ content: 'Your request has been sent to execs!', ephemeral: true })
 
