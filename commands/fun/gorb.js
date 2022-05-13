@@ -17,5 +17,9 @@ module.exports = {
         if(args[0] === 'cs'){
             message.channel.send({ files: ['./images/gorbcs.jpg'] })
         }
+
+        if(args[0] === 'party'){
+            message.channel.send({ files: ['./images/gorbcelebration.jpg'] })
+        }
     },
 };
