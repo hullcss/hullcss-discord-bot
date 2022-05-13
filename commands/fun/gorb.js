@@ -10,6 +10,12 @@ module.exports = {
      * @param {String[]} args
      */
     run: async (client, message, args) => {
-        message.channel.send({ files: ['./images/gorb.jpg'] })
+        
+        if(!args[0]){
+            message.channel.send({ files: ['./images/gorb.jpg'] })
+        }
+        if(args[0] === 'cs'){
+            message.channel.send({ files: ['./images/gorbcs.jpg'] })
+        }
     },
 };
