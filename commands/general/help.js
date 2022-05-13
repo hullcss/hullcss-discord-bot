@@ -21,6 +21,7 @@ module.exports = {
             .addField('🛠️`-help admin`','Displays Admin Commands!', true)
             .addField('ℹ️ `-help general`', 'Displays General Commands!', true)
             .addField('🎉`-help fun`', 'Displays Fun Commands!', true)
+            .addField('-help gorb', 'Displays Gorb Commands', true)
             message.channel.send({ embeds: [embed] });
         }
     
@@ -28,7 +29,6 @@ module.exports = {
             const embed = new discord.MessageEmbed()
             .setTitle("Admin Commands")
             .setColor('GREEN')
-
             message.channel.send({ embeds: [embed] });
         }
     
@@ -53,10 +53,25 @@ module.exports = {
 
             .addField('-8ball', 'Answer your deepest questions.')
             .addField('-gorb', 'guinea pig orb')
+            message.channel.send({ embeds: [embed] });
+        }
 
+        
+        if(args[0] === 'gorbb'){
+            const embed = new discord.MessageEmbed()
+            .setTitle("Fun Comamnds")
+            .setColor('GREEN')
+            .setDescription("All commands are followed by `-gorb` ")
+            .addField('-gorb cs', 'CS Gorb')
+            .addField('-gorb party', 'Party Gorb')
+            .addField('-gorb christmas', 'Christmas Gorb'
+            .addField('-gorb storm', 'Storm Gorb')
+            )
 
             message.channel.send({ embeds: [embed] });
         }
+
+
 
     }
 }
