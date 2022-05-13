@@ -126,6 +126,28 @@ client.on("interactionCreate", async (interaction) => {
                     interaction.member.roles.remove("460435898660683778") // Remove PhD Year
                     interaction.member.roles.remove("441277481488613386") // Remove Graduate Year
                 }
+                else if(interaction.values.includes("4"))
+                {
+                    interaction.member.roles.add("441277001744121856") // Add Third Year
+                    interaction.member.roles.remove("974754114296741948") // Remove Foundation Year
+                    interaction.member.roles.remove("441276956089122836") // Remove First Year
+                    interaction.member.roles.remove("441276979514441741") // Remove Second Year
+                    interaction.member.roles.remove("441277048003100684") // Remove Year In Industry Year
+                    interaction.member.roles.remove("441277023873138743") // Remove Masters Year
+                    interaction.member.roles.remove("460435898660683778") // Remove PhD Year
+                    interaction.member.roles.remove("441277481488613386") // Remove Graduate Year
+                }
+                else if(interaction.values.includes("5"))
+                {
+                    interaction.member.roles.add("441277023873138743") // Add Masters Year
+                    interaction.member.roles.remove("974754114296741948") // Remove Foundation Year
+                    interaction.member.roles.remove("441276956089122836") // Remove First Year
+                    interaction.member.roles.remove("441276979514441741") // Remove Second Year
+                    interaction.member.roles.remove("441277048003100684") // Remove Year In Industry Year
+                    interaction.member.roles.remove("441277001744121856") // Remove Third Year
+                    interaction.member.roles.remove("460435898660683778") // Remove PhD Year
+                    interaction.member.roles.remove("441277481488613386") // Remove Graduate Year
+                }
 
 
 
