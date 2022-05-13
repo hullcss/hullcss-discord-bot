@@ -77,9 +77,36 @@ client.on("interactionCreate", async (interaction) => {
                 await interaction.message.delete();
                 await interaction.reply({ content: 'Message has been deleted', ephemeral: true});
             }
+        }
+
+        if(interaction.isSelectMenu()) {
+            if(interaction.customId == "yearSelect")
+            {
+                if(interaction.values.includes("0"))
+                {
+                    interaction.member.roles.add("974754114296741948") // Add Foundation
+                    interaction.member.roles.remove("441276956089122836") // Remove First Year
+                    interaction.member.roles.remove("441276979514441741") // Remove Second Year
+                    interaction.member.roles.remove("441277048003100684") // Remove Year In Industry Year
+                    interaction.member.roles.remove("441277001744121856") // Remove Third Year
+                    interaction.member.roles.remove("441277023873138743") // Remove Masters Year
+                    interaction.member.roles.remove("460435898660683778") // Remove PhD Year
+                    interaction.member.roles.remove("441277481488613386") // Remove Graduate Year
+                }
+                else if(interaction.values.includes("1"))
+                {
+                    interaction.member.roles.add("441276956089122836") // Add First Year
+                    interaction.member.roles.remove("441276956089122836") // Remove Foundation Year
+                    interaction.member.roles.remove("441276979514441741") // Remove Second Year
+                    interaction.member.roles.remove("441277048003100684") // Remove Year In Industry Year
+                    interaction.member.roles.remove("441277001744121856") // Remove Third Year
+                    interaction.member.roles.remove("441277023873138743") // Remove Masters Year
+                    interaction.member.roles.remove("460435898660683778") // Remove PhD Year
+                    interaction.member.roles.remove("441277481488613386") // Remove Graduate Year
+                }
 
 
 
-
+            }
         }
     })
