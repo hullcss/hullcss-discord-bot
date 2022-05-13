@@ -3,7 +3,7 @@ const discord = require('discord.js');
 
 client.on('modalSubmitInteraction', async (interaction) => {
     if(interaction.customId === 'modal-paidmember'){
-        const execchannel = client.channels.cache.get('970027557607071754')
+        const execchannel = client.channels.cache.get('974268736079015956')
 
         const embed = new discord.MessageEmbed()
         .setTitle("New Paid Member Request")
