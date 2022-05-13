@@ -78,6 +78,11 @@ client.on("interactionCreate", async (interaction) => {
                 await interaction.reply({ content: 'Message has been deleted', ephemeral: true});
             }
 
+            if(interaction.customId == "addrole")
+            {
+
+            }
+
 
 
 

@@ -14,6 +14,13 @@ client.on('modalSubmitInteraction', async (interaction) => {
         const row = new discord.MessageActionRow()
         .addComponents(
             new discord.MessageButton()
+            .setCustomId('addrole')
+            .setEmoji('')
+            .setLabel('Add Role')
+            .setStyle('SUCCESS')
+        )
+        .addComponents(
+            new discord.MessageButton()
             .setCustomId('deletemessage')
             .setEmoji('')
             .setLabel('Delete Message')
