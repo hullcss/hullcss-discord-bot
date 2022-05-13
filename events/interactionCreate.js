@@ -239,6 +239,18 @@ client.on("interactionCreate", async (interaction) => {
                 interaction.member.roles.remove("891422669575184436") // Remove Prof
             }
         }
+
+        if(interaction.customId == "miscSelect")
+        {
+            if(interaction.values.includes("courserep"))
+            { interaction.member.roles.add("493738161713709077")} 
+            else{interaction.member.roles.remove("493738161713709077")}
+
+            if(interaction.values.includes("ACWPing"))
+            { interaction.member.roles.add("904354161561309184")} 
+            else{interaction.member.roles.remove("904354161561309184")}
+        }
+
         await interaction.reply({ content: 'Roles have been updated', ephemeral: true});
     }
 });
