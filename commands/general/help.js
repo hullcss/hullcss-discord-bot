@@ -57,7 +57,7 @@ module.exports = {
         }
 
         
-        if(args[0] === 'gorbb'){
+        if(args[0] === 'gorb'){
             const embed = new discord.MessageEmbed()
             .setTitle("Fun Comamnds")
             .setColor('GREEN')
