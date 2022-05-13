@@ -41,6 +41,9 @@ module.exports = {
 
             .addField('-buy', 'Sends a link to purchase membership')
             .addField('-links', 'Get all the links')
+            .addField('-freeside', 'A link to the Freeside discord server')
+            .addField('-robsoc', 'A link to the Robotics Society discord server')
+
             message.channel.send({ embeds: [embed] });
         }
 
