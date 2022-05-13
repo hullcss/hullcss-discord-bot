@@ -80,99 +80,36 @@ client.on("interactionCreate", async (interaction) => {
         }
 
         if(interaction.isSelectMenu()) {
-            if(interaction.customId == "yearSelect")
+            if(interaction.customId == "pronounSelect")
             {
-                if(interaction.values.includes("0"))
-                {
-                    interaction.member.roles.add("974754114296741948") // Add Foundation
-                    interaction.member.roles.remove("441276956089122836") // Remove First Year
-                    interaction.member.roles.remove("441276979514441741") // Remove Second Year
-                    interaction.member.roles.remove("441277048003100684") // Remove Year In Industry Year
-                    interaction.member.roles.remove("441277001744121856") // Remove Third Year
-                    interaction.member.roles.remove("441277023873138743") // Remove Masters Year
-                    interaction.member.roles.remove("460435898660683778") // Remove PhD Year
-                    interaction.member.roles.remove("441277481488613386") // Remove Graduate Year
-                }
-                else if(interaction.values.includes("1"))
-                {
-                    interaction.member.roles.add("441276956089122836") // Add First Year
-                    interaction.member.roles.remove("974754114296741948") // Remove Foundation Year
-                    interaction.member.roles.remove("441276979514441741") // Remove Second Year
-                    interaction.member.roles.remove("441277048003100684") // Remove Year In Industry Year
-                    interaction.member.roles.remove("441277001744121856") // Remove Third Year
-                    interaction.member.roles.remove("441277023873138743") // Remove Masters Year
-                    interaction.member.roles.remove("460435898660683778") // Remove PhD Year
-                    interaction.member.roles.remove("441277481488613386") // Remove Graduate Year
-                }
-                else if(interaction.values.includes("2"))
-                {
-                    interaction.member.roles.add("441276979514441741") // Add Second Year
-                    interaction.member.roles.remove("974754114296741948") // Remove Foundation Year
-                    interaction.member.roles.remove("441276956089122836") // Remove First Year
-                    interaction.member.roles.remove("441277048003100684") // Remove Year In Industry Year
-                    interaction.member.roles.remove("441277001744121856") // Remove Third Year
-                    interaction.member.roles.remove("441277023873138743") // Remove Masters Year
-                    interaction.member.roles.remove("460435898660683778") // Remove PhD Year
-                    interaction.member.roles.remove("441277481488613386") // Remove Graduate Year
-                }
-                else if(interaction.values.includes("3"))
-                {
-                    interaction.member.roles.add("441277048003100684") // Add Year In Industry Year
-                    interaction.member.roles.remove("974754114296741948") // Remove Foundation Year
-                    interaction.member.roles.remove("441276956089122836") // Remove First Year
-                    interaction.member.roles.remove("441276979514441741") // Remove Second Year
-                    interaction.member.roles.remove("441277001744121856") // Remove Third Year
-                    interaction.member.roles.remove("441277023873138743") // Remove Masters Year
-                    interaction.member.roles.remove("460435898660683778") // Remove PhD Year
-                    interaction.member.roles.remove("441277481488613386") // Remove Graduate Year
-                }
-                else if(interaction.values.includes("4"))
-                {
-                    interaction.member.roles.add("441277001744121856") // Add Third Year
-                    interaction.member.roles.remove("974754114296741948") // Remove Foundation Year
-                    interaction.member.roles.remove("441276956089122836") // Remove First Year
-                    interaction.member.roles.remove("441276979514441741") // Remove Second Year
-                    interaction.member.roles.remove("441277048003100684") // Remove Year In Industry Year
-                    interaction.member.roles.remove("441277023873138743") // Remove Masters Year
-                    interaction.member.roles.remove("460435898660683778") // Remove PhD Year
-                    interaction.member.roles.remove("441277481488613386") // Remove Graduate Year
-                }
-                else if(interaction.values.includes("5"))
-                {
-                    interaction.member.roles.add("441277023873138743") // Add Masters Year
-                    interaction.member.roles.remove("974754114296741948") // Remove Foundation Year
-                    interaction.member.roles.remove("441276956089122836") // Remove First Year
-                    interaction.member.roles.remove("441276979514441741") // Remove Second Year
-                    interaction.member.roles.remove("441277048003100684") // Remove Year In Industry Year
-                    interaction.member.roles.remove("441277001744121856") // Remove Third Year
-                    interaction.member.roles.remove("460435898660683778") // Remove PhD Year
-                    interaction.member.roles.remove("441277481488613386") // Remove Graduate Year
-                }
-                else if(interaction.values.includes("6"))
-                {
-                    interaction.member.roles.add("460435898660683778") // Add PhD Year
-                    interaction.member.roles.remove("974754114296741948") // Remove Foundation Year
-                    interaction.member.roles.remove("441276956089122836") // Remove First Year
-                    interaction.member.roles.remove("441276979514441741") // Remove Second Year
-                    interaction.member.roles.remove("441277048003100684") // Remove Year In Industry Year
-                    interaction.member.roles.remove("441277001744121856") // Remove Third Year
-                    interaction.member.roles.remove("441277023873138743") // Remove Masters Year
-                    interaction.member.roles.remove("441277481488613386") // Remove Graduate Year
-                }
-                else if(interaction.values.includes("7"))
-                {
-                    interaction.member.roles.add("441277481488613386") // Add PhD Year
-                    interaction.member.roles.remove("974754114296741948") // Remove Foundation Year
-                    interaction.member.roles.remove("441276956089122836") // Remove First Year
-                    interaction.member.roles.remove("441276979514441741") // Remove Second Year
-                    interaction.member.roles.remove("441277048003100684") // Remove Year In Industry Year
-                    interaction.member.roles.remove("441277001744121856") // Remove Third Year
-                    interaction.member.roles.remove("441277023873138743") // Remove Masters Year
-                    interaction.member.roles.remove("460435898660683778") // Remove PhD Year
-                }
+                if(interaction.values.includes("HeHim"))
+                { interaction.member.roles.add("851148987271479385")} // Add Foundation
+                else{interaction.member.roles.remove("851148987271479385")} // Remove First Year
 
+                if(interaction.values.includes("HeThey"))
+                { interaction.member.roles.add("974762127762010162")} // Add First Year
+                else{interaction.member.roles.remove("974762127762010162")}
 
+                if(interaction.values.includes("SheHer"))
+                { interaction.member.roles.add("851149045241085963")} // Add First Year
+                else{interaction.member.roles.remove("851149045241085963")}
+                
+                if(interaction.values.includes("SheThey"))
+                { interaction.member.roles.add("974762040969273404")} // Add First Year
+                else{interaction.member.roles.remove("974762040969273404")}
 
+                if(interaction.values.includes("TheyThem"))
+                { interaction.member.roles.add("851149362582913074")} // Add First Year
+                else{interaction.member.roles.remove("851149362582913074")}
+
+                if(interaction.values.includes("Any"))
+                { interaction.member.roles.add("851149407050137631")} 
+                else{interaction.member.roles.remove("851149407050137631")}
+
+                
+                if(interaction.values.includes("Ask"))
+                { interaction.member.roles.add("851149443738107934")} 
+                else{interaction.member.roles.remove("851149443738107934")}
 
                 await interaction.reply({ content: 'Roles have been updated', ephemeral: true});
             }
