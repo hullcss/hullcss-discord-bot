@@ -14,7 +14,7 @@ client.on('modalSubmitInteraction', async (interaction) => {
         const row = new discord.MessageActionRow()
         .addComponents(
             new discord.MessageButton()
-            .setCustomId('paidmemberdelete')
+            .setCustomId('deletemessage')
             .setEmoji('')
             .setLabel('Delete Message')
             .setStyle('DANGER')

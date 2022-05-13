@@ -72,7 +72,7 @@ client.on("interactionCreate", async (interaction) => {
                 }
             }
 
-            if(interaction.customId == "paidmemberdelete")
+            if(interaction.customId == "deletemessage")
             {
                 await interaction.message.delete();
                 await interaction.reply({ content: 'Message has been deleted', ephemeral: true});
