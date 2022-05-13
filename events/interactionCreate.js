@@ -63,5 +63,15 @@ client.on("interactionCreate", async (interaction) => {
                     )
                     client.modal.open(interaction, modal) 
             }
+
+            if(interaction.customId == "paidmemberdelete")
+            {
+                await interaction.message.delete();
+                await interaction.reply({ content: 'Message has been deleted', ephemeral: true});
+            }
+
+
+
+
         }
     })
