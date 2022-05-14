@@ -17,11 +17,11 @@ module.exports = {
             .setDescription("You can use `-help <category>` to get additional commands within a specfic category")
             .setColor('GREEN')
     
-            .addField('❓`-help`','This Command', true)
-            .addField('🛠️`-help admin`','Displays Admin Commands!', true)
-            .addField('ℹ️ `-help general`', 'Displays General Commands!', true)
-            .addField('🎉`-help fun`', 'Displays Fun Commands!', true)
-            .addField('-help gorb', 'Displays Gorb Commands', true)
+            .addField('❓`!help`','This Command', true)
+            .addField('🛠️`!help admin`','Displays Admin Commands!', true)
+            .addField('ℹ️ `!help general`', 'Displays General Commands!', true)
+            .addField('🎉`!help fun`', 'Displays Fun Commands!', true)
+            .addField('!help gorb', 'Displays Gorb Commands', true)
             message.channel.send({ embeds: [embed] });
         }
     
@@ -39,32 +39,21 @@ module.exports = {
             .setTitle("General Comamnds")
             .setColor('GREEN')
 
-            .addField('-buy', 'Sends a link to purchase membership')
-            .addField('-links', 'Get all the links')
-            .addField('-freeside', 'A link to the Freeside discord server')
-            .addField('-robsoc', 'A link to the Robotics Society discord server')
+            .addField('!buy', 'Sends a link to purchase membership')
+            .addField('!links', 'Get all the links')
+            .addField('!freeside', 'A link to the Freeside discord server')
+            .addField('!robsoc', 'A link to the Robotics Society discord server')
 
             message.channel.send({ embeds: [embed] });
         }
-
-        if(args[0] === 'fun'){
-            const embed = new discord.MessageEmbed()
-            .setTitle("Fun Comamnds")
-            .setColor('GREEN')
-
-            .addField('-8ball', 'Answer your deepest questions.')
-            .addField('-gorb', 'guinea pig orb')
-            message.channel.send({ embeds: [embed] });
-        }
-
         
         if(args[0] === 'fun'){
             const embed = new discord.MessageEmbed()
             .setTitle("Fun Comamnds")
             .setColor('GREEN')
 
-            .addField('-8ball', 'Answer your deepest questions.')
-            .addField('-gorb', 'guinea pig orb')
+            .addField('!8ball', 'Answer your deepest questions.')
+            .addField('!gorb', 'guinea pig orb')
             message.channel.send({ embeds: [embed] });
         }
 
@@ -73,10 +62,10 @@ module.exports = {
             const embed = new discord.MessageEmbed()
             .setTitle("Gorb Comamnds")
             .setColor('GREEN')
-            .addField('-gorb cs', 'CS Gorb')
-            .addField('-gorb party', 'Party Gorb')
-            .addField('-gorb christmas', 'Christmas Gorb')
-            .addField('-gorb storm', 'Storm Gorb')
+            .addField('!gorb cs', 'CS Gorb')
+            .addField('!gorb party', 'Party Gorb')
+            .addField('!gorb christmas', 'Christmas Gorb')
+            .addField('!gorb storm', 'Storm Gorb')
 
             message.channel.send({ embeds: [embed] });
         }
