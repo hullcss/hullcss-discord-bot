@@ -21,22 +21,30 @@ client.on("messageCreate", async (message) => {
     await command.run(client, message, args);
 
     const image = message.attachments.first();
-    if(!image){return} 
-    if(message.channel.id != "970027557607071754"){return}
-
-    try {
-        const worker = createWorker()
-        await worker.load()
-        await worker.loadlanguage('eng')
-        await worker.initialize('eng')
-        const {
-            data: { text },
-        } = await worker.recognize(image.url)
-        await worker.terminate()
-        message.reply(text)
-    } catch (e) {
-        console.error(e)
+    if(!image){
+        return
+    } 
+    if(message.channel.id != "970027557607071754")
+    {
+        return
+    } 
+    else{
+        try {
+            const worker = createWorker()
+            await worker.load()
+            await worker.loadlanguage('eng')
+            await worker.initialize('eng')
+            const {
+                data: { text },
+            } = await worker.recognize(image.url)
+            await worker.terminate()
+            message.reply(text)
+        } catch (e) {
+            console.error(e)
+        }
     }
+
+    
 
 
 });
