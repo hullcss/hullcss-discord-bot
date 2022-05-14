@@ -14,14 +14,14 @@ module.exports = {
         if(!args[0]){
             const embed = new discord.MessageEmbed()
             .setTitle("HullCSS Help")
-            .setDescription("You can use `-help <category>` to get additional commands within a specfic category")
+            .setDescription("You can use `!help <category>` to get additional commands within a specfic category")
             .setColor('GREEN')
     
             .addField('❓`!help`','This Command', true)
             .addField('🛠️`!help admin`','Displays Admin Commands!', true)
             .addField('ℹ️ `!help general`', 'Displays General Commands!', true)
             .addField('🎉`!help fun`', 'Displays Fun Commands!', true)
-            .addField('!help gorb', 'Displays Gorb Commands', true)
+            .addField('🐹 `!help gorb`', 'Displays Gorb Commands', true)
             message.channel.send({ embeds: [embed] });
         }
     
