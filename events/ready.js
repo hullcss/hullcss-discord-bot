@@ -3,7 +3,6 @@ const discord = require("discord.js")
 
 
 client.on('ready', () => {
-    console.log('HullCSS is online')
     client.user.setActivity(`!help | hullcss.org` , {type:"WATCHING"})
 
     setInterval(() =>{

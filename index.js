@@ -15,4 +15,19 @@ DiscordModal(client)
 // Initializing the project
 require("./handler")(client);
 
+var express = require('express');
+var app = express(); // here I use the express() method, instead of the createServer()
+
+
+app.get('/ping', (req, res) => {
+    console.info('Server was pinged');
+    res.send('Hello World');
+});
+
+var server = app.listen(3000, function() {
+    console.log('HullCSS is online')
+    console.log('Listening on port %d', server.address().port);
+});
+
+
 client.login(config.token);
