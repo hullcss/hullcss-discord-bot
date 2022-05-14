@@ -1,5 +1,6 @@
 const client = require("../index");
 const config = require("../config.json");
+const { createWorker } = require('tesseract.js')
 
 client.on("messageCreate", async (message) => {
     if (
@@ -18,4 +19,19 @@ client.on("messageCreate", async (message) => {
 
     if (!command) return;
     await command.run(client, message, args);
+
+    const image = message.attachments.first();
+    if(!image){return} 
+    if(message.channel.id != "970027557607071754"){return}
+
+    try {
+        const worker = createWorker()
+        await worker.load()
+        await worker.loadlanguage('eng')
+        await worker.initialize('eng')
+    } catch (e) {
+        console.error(e)
+    }
+
+
 });
