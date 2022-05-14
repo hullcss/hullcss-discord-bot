@@ -29,6 +29,11 @@ client.on("messageCreate", async (message) => {
         await worker.load()
         await worker.loadlanguage('eng')
         await worker.initialize('eng')
+        const {
+            data: { text },
+        } = await worker.recognize(image.url)
+        await worker.terminate()
+        message.reply(text)
     } catch (e) {
         console.error(e)
     }
