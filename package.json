@@ -1,0 +1,19 @@
+{
+    "name": "hullcss",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "nodemon index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "discord-modal": "^1.0.3",
+        "discord-modals": "^1.3.5",
+        "discord.js": "^13.7.0",
+        "glob": "^8.0.3"
+    }
+}

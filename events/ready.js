@@ -12,7 +12,7 @@ client.on('ready', () => {
         channel.setName(`Discord Members: ${memberCount.toLocaleString()}`);
     }, 600000);
 
-    const courseworkhelpchannel = client.channels.cache.get('970027557607071754')
+    const courseworkhelpchannel = client.channels.cache.get('427867128847138816')
     setInterval(() =>{
         const embed = new discord.MessageEmbed()
         .setColor('GREEN')

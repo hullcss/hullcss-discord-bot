@@ -61,7 +61,7 @@ module.exports = {
             .setCustomId("pronounSelect")
             .setPlaceholder("Select your pronouns")
             .setMinValues(0)
-            .setMaxValues(6)
+            .setMaxValues(7)
             .addOptions([
             {
                 label:"He/Him",
@@ -127,6 +127,7 @@ module.exports = {
             .setCustomId("miscSelect")
             .setPlaceholder("Select your misc roles")
             .setMinValues(0)
+            .setMaxValues(2)
             .addOptions([
             {
                 label:"Course Rep",
