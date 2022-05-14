@@ -4,7 +4,7 @@ const discord = require("discord.js")
 
 client.on('ready', () => {
     console.log('HullCSS is online')
-    client.user.setActivity(`#help | hullcss.org` , {type:"WATCHING"})
+    client.user.setActivity(`!help | hullcss.org` , {type:"WATCHING"})
 
     setInterval(() =>{
         const memberCount = client.guilds.cache.get('427865794467069962').memberCount
