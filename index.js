@@ -15,8 +15,7 @@ DiscordModal(client)
 // Initializing the project
 require("./handler")(client);
 
-var express = require('express');
-var app = express(); // here I use the express() method, instead of the createServer()
+
 
 
 
