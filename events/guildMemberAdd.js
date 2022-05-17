@@ -4,7 +4,6 @@ const discord = require('discord.js');
 
 
 client.on('guildMemberAdd', async (guildmember) =>{
-    const guild = client.guilds.cache.get('427865794467069962');
     const welcomechannel = client.channels.cache.get('427875246801027072')
     const guild = client.guilds.cache.get('427865794467069962');
 
