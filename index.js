@@ -1,4 +1,3 @@
-const config = require("./config.json"); 
 const { Client, Collection } = require("discord.js");
 const DiscordModal = require('discord-modal')
 const client = new Client({
