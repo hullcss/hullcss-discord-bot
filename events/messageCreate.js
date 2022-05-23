@@ -5,12 +5,12 @@ client.on("messageCreate", async (message) => {
     if (
         message.author.bot ||
         !message.guild ||
-        !message.content.toLowerCase().startsWith(config.prefix)
+        !message.content.toLowerCase().startsWith(process.env.PREFIX)
     )
         return;
 
     const [cmd, ...args] = message.content
-        .slice(config.prefix.length)
+        .slice(process.env.PREFIX.length)
         .trim()
         .split(/ +/g);
 

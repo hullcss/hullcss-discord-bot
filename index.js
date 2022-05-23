@@ -20,4 +20,4 @@ require("./handler")(client);
 
 
 
-client.login(config.token);
+client.login(cprocess.env.DISCORD_TOKEN);

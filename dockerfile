@@ -1,18 +1,17 @@
 FROM node:16.15.0
 
 # Create the directory!
-RUN mkdir -p /usr/src/bot
-WORKDIR /usr/src/bot
+RUN mkdir -p /usr/hullcss
+WORKDIR /usr/hullcss
 
 # Copy and Install our bot
-COPY package.json /usr/src/bot
+COPY package.json /usr/hullcss
 RUN npm install
 
 # Our precious bot
-COPY . /usr/src/bot
+COPY . /usr/hullcss
 
 # Start me!
-EXPOSE 5001
+EXPOSE 5002
 VOLUME ["latest"]
-HEALTHCHECK --interval=60s --timeout=30s --start-period=180s --retries=5 CMD node extra/healthcheck.js
 CMD ["node", "index.js"]
