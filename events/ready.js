@@ -24,5 +24,5 @@ client.on('ready', () => {
         .addField('Canvas', 'The best place to get help will always be by asking the lecturer. By using the Canvas discussion forum, this means that you will get direct help from the module team and others studying the module.')
         .addField('Pingable Role', 'There is a pingable role for you to ping helpful people. Please don`t overuse it.')
         courseworkhelpchannel.send({ embeds: [embed] });
-    }, 86400000);
+    }, 604800000);
 })

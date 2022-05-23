@@ -2,7 +2,7 @@ const discord = require("discord.js");
 
 module.exports = {
     name: "links",
-    aliases: ['p'],
+    aliases: [''],
     /**
      *
      * @param {Client} client
