@@ -14,9 +14,8 @@ DiscordModal(client)
 // Initializing the project
 require("./handler")(client);
 
-
-
-
-
+client.on('ready', () => {
+    client.user.setActivity(`!help | hullcss.org` , {type:"WATCHING"})
+})
 
 client.login(process.env.DISCORD_TOKEN);
