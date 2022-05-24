@@ -31,6 +31,10 @@ module.exports = {
             message.channel.send({ files: ['./images/gorbstorm.png'] })
         }
 
+        if(args[0] == 'large'){
+            message.channel.send({ files: ['./images/gorblarge.png'] })
+        }
+
 
     },
 };
