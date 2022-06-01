@@ -1,6 +1,18 @@
 const client = require("../index");
+require("dotenv").config();
+const discord = require('discord.js');
+
+
 
 client.on("messageCreate", async (message) => {
+    if(message.channel.id == "969944638498680875")
+    {
+        await message.startThread({
+            name: `${message.author} - ${messageArgs}`,
+            autoArchiveDuration: 60,
+            type: 'GUILD_PUBLIC_THREAD'
+        });
+
     if (
         message.author.bot ||
         !message.guild ||
@@ -18,4 +30,7 @@ client.on("messageCreate", async (message) => {
     if (!command) return;
     await command.run(client, message, args);
     
+
+    }
+
 });

@@ -4,7 +4,8 @@ const discord = require("discord.js")
 
 client.on('ready', () => {
     client.user.setActivity(`!help | hullcss.org` , {type:"WATCHING"})
-
+    console.log("hullcss is ready")
+    /*
     setInterval(() =>{
         const memberCount = client.guilds.cache.get('427865794467069962').memberCount
         const channel = client.channels.cache.get('906167542249308160');
@@ -25,4 +26,5 @@ client.on('ready', () => {
         .addField('Pingable Role', 'There is a pingable role for you to ping helpful people. Please don`t overuse it.')
         courseworkhelpchannel.send({ embeds: [embed] });
     }, 604800000);
+    */
 })

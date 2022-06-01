@@ -1,5 +1,7 @@
 const { Client, Collection } = require("discord.js");
 const DiscordModal = require('discord-modal')
+require("dotenv").config();
+
 const client = new Client({
     intents: 32767,
 });
@@ -16,6 +18,7 @@ require("./handler")(client);
 
 client.on('ready', () => {
     client.user.setActivity(`!help | hullcss.org` , {type:"WATCHING"})
+    console.log("hulcss is ready")
 })
 
 client.login(process.env.DISCORD_TOKEN);

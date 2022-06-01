@@ -39,7 +39,7 @@ module.exports = async (client) => {
     client.on("ready", async () => {
         // Register for a single guild
         await client.guilds.cache
-            .get("427865794467069962")
+            .get("969944638498680872")
             .commands.set(arrayOfSlashCommands);
     });
 };
