@@ -171,7 +171,6 @@ client.on("interactionCreate", async (interaction) => {
                 interaction.member.roles.remove("441277023873138743") // Remove Masters Year
                 interaction.member.roles.remove("460435898660683778") // Remove PhD Year
             }
-            await interaction.deferReply({ ephemeral: true })
             await interaction.reply({ content: 'Roles have been updated', ephemeral: true});
         }
 
@@ -206,7 +205,6 @@ client.on("interactionCreate", async (interaction) => {
             { interaction.member.roles.add("851149443738107934")} 
             else{interaction.member.roles.remove("851149443738107934")}
 
-            await interaction.deferReply({ ephemeral: true })
             await interaction.reply({ content: 'Roles have been updated', ephemeral: true});
         }
 
@@ -241,8 +239,6 @@ client.on("interactionCreate", async (interaction) => {
                 interaction.member.roles.remove("891422508555829288") // Remove Associate
                 interaction.member.roles.remove("891422669575184436") // Remove Prof
             }
-
-            await interaction.deferReply({ ephemeral: true })
             await interaction.reply({ content: 'Roles have been updated', ephemeral: true});
         }
 
@@ -255,8 +251,7 @@ client.on("interactionCreate", async (interaction) => {
             if(interaction.values.includes("ACWPing"))
             { interaction.member.roles.add("904354161561309184")} 
             else{interaction.member.roles.remove("904354161561309184")}
-
-            await interaction.deferReply({ ephemeral: true })
+            
             await interaction.reply({ content: 'Roles have been updated', ephemeral: true});
         }
 
