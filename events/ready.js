@@ -1,10 +1,12 @@
 const client = require("../index");
+const levels = require('../events/levels')
 
 
 
 client.on('ready', () => {
-    console.log('Clarence is online')
-    client.user.setActivity(`-help`, {type:"WATCHING"})
+    console.log('HullCSS is online')
+    client.user.setActivity(`!help | hullcss.org`, {type:"WATCHING"})
+    levels(client)
 
 
     const guild = client.guilds.cache.get('744586833135927366');
