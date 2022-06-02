@@ -26,7 +26,10 @@ module.exports = async (client) => {
     eventFiles.map((value) => require(value));
 
     // Slash Commands
-    const slashCommands = await globPromise(`${process.cwd()}/SlashCommands/*/*.js`);
+    const slashCommands = await globPromise(
+        `${process.cwd()}/SlashCommands/*/*.js`
+    );
+
     const arrayOfSlashCommands = [];
     slashCommands.map((value) => {
         const file = require(value);
@@ -41,5 +44,8 @@ module.exports = async (client) => {
         await client.guilds.cache
             .get("969944638498680872")
             .commands.set(arrayOfSlashCommands);
+
+        // Register for all the guilds the bot is in
+        // await client.application.commands.set(arrayOfSlashCommands);
     });
 };

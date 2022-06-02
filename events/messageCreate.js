@@ -7,9 +7,9 @@ const discord = require('discord.js');
 client.on("messageCreate", async (message) => {
     if(message.channel.id == "969944638498680875")
     {
-        const row = new MessageActionRow()
+        const row = new discord.MessageActionRow()
         .addComponents(
-            new MessageButton()
+            new discord.MessageButton()
             .setCustomId('CloseThread')
             .setEmoji('<:archive:937932140014866492> ')
             .setLabel('Archive Thread')
