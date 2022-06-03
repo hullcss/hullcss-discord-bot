@@ -12,6 +12,4 @@ RUN npm install
 COPY . /usr/hullcss
 
 # Start me!
-EXPOSE 5002
-VOLUME ["latest"]
 CMD ["node", "index.js"]
