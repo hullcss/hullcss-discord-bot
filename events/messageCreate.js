@@ -5,7 +5,7 @@ const discord = require('discord.js');
 
 
 client.on("messageCreate", async (message) => {
-    if(message.channel.id == "969944638498680875")
+    if(message.channel.id == "427867128847138816")
     {
         const row = new discord.MessageActionRow()
         .addComponents(
