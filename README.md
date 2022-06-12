@@ -7,7 +7,9 @@ This bot features multiple command types from:
 * Fun
 * General
 
-### Installation 
+---
+## Installation 
+
 **This is a private bot used for a specific purpose within a specific discord server.** 
 
 However if you do want to run the bot for testing purposes or deploy it to a new container. Run the below command to run the bot.
@@ -23,5 +25,9 @@ docker run -d \
 kieranr27/hullcss:latest
 ```
 
-### Contributions
+Using a tool like [Ouroboros](https://github.com/pyouroboros/ouroboros), you can automatically update containers without the need for restarts.
+
+---
+## Contributions
 While this bot is maintained by [Kieran](https://github.com/KieranRobson), contributors are welcome! 
+- Contribution guidelines are coming soon.
