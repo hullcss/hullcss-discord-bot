@@ -9,12 +9,11 @@ This bot features multiple command types from:
 
 ---
 ## Installation 
+**This is a private bot used for a specific purpose within a specific discord server however if you do want to run the bot for testing purposes or deploy it to a new location. Follow the instructions below.** 
 
-**This is a private bot used for a specific purpose within a specific discord server.** 
-
-However if you do want to run the bot for testing purposes or deploy it to a new container. Run the below command to run the bot.
-
+### 🐋 Docker 
 Due to the [Publish.yml](.github/workflows/publish.yml) workflow, the newest build will automatically be pushed to dockerhub.
+
 ```docker
 docker run -d \
 --name=hullcss \
@@ -26,6 +25,16 @@ kieranr27/hullcss:latest
 ```
 
 Using a tool like [Ouroboros](https://github.com/pyouroboros/ouroboros), you can automatically update containers without the need for restarts.
+
+### 👷 Manual
+- Clone the repo 
+- Create a `.env` file with the following lines:
+```
+DISCORD_TOKEN = <Discord Token>
+PREFIX = !
+```
+- Run `npm i`
+- Run node .
 
 ---
 ## Contributions
