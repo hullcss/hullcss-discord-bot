@@ -4,7 +4,7 @@ require("dotenv").config();
 
 
 const client = new Client({
-    intents: 32767,
+    intents: 98819,
 });
 module.exports = client;
 
