@@ -1,5 +1,4 @@
 const discord = require("discord.js");
-const {  Modal, TextInputComponent, showModal } = require('discord-modals') // Modal class
 
 module.exports = {
     name: "paidmember",

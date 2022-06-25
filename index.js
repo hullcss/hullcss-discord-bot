@@ -15,6 +15,4 @@ client.slashCommands = new Collection();
 // Initializing the project
 require("./handler")(client);
 
-
-
 client.login(process.env.DISCORD_TOKEN);

@@ -1,6 +1,5 @@
 
 const client = require("../index");
-const {  DiscordModal, ModalBuilder, ModalField } = require('discord-modal') // Modal and TextInputComponent class
 
 client.on("interactionCreate", async (interaction) => {
     // Slash Command Handling
