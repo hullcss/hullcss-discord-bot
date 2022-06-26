@@ -1,5 +1,6 @@
 
 const client = require("../index");
+const discord = require("discord.js")
 
 client.on("interactionCreate", async (interaction) => {
     // Slash Command Handling
@@ -49,26 +50,23 @@ client.on("interactionCreate", async (interaction) => {
 
                 } 
                 else{
-                    const modal = new ModalBuilder() // We create a Modal
-                    .setCustomId('modal-paidmember')
-                    .setTitle('Paid Member Discord Access')
-                    .addComponents(
-                        new ModalField()
+                    const modal = new discord.Modal()
+                        .setCustomId('modal-paidmember')
+                        .setTitle('Paid Member Discord Access')
+                    const studentname = new discord.TextInputComponent()                        
                         .setLabel("Student Name")
-                        .setStyle("short")
-                        .setMin(1)
-                        .setPlaceholder("Joe Bloggs")
-                        .setCustomId("studentname"),
-                        new ModalField()
+                        .setStyle("SHORT")
+                        .setCustomId("studentname")
+                    const studentnumber = new discord.TextInputComponent()                        
                         .setLabel("Student Number")
-                        .setStyle("short")
+                        .setStyle("SHORT")
                         .setCustomId("studentnumber")
-                        .setMin(9)
-                        .setMin(9)
-                        .setPlaceholder("201801122")
-                        )
-                        client.modal.open(interaction, modal) 
-                }
+                    const firstActionRow = new discord.MessageActionRow().addComponents(studentname);
+                    const secondActionRow = new discord.MessageActionRow().addComponents(studentnumber);   
+                    modal.addComponents(firstActionRow, secondActionRow);
+                    await interaction.showModal(modal);   
+
+                    }
             }
 
             if(interaction.customId == "deletemessage")
@@ -262,7 +260,33 @@ client.on("interactionCreate", async (interaction) => {
             
             await interaction.reply({ content: 'Roles have been updated', ephemeral: true});
         }
-
-
     }
+
+    if(interaction.isModalSubmit)
+    {
+        if(interaction.customId === 'modal-paidmember'){
+            const execchannel = client.channels.cache.get('981678376655921153')
+    
+            const embed = new discord.MessageEmbed()
+                .setTitle("New Paid Member Request")
+                .setColor('GREEN')
+                .addField('Discord Tag', `${ interaction.user} <- Click to add role.`)
+                .addField('Student Name', `${ interaction.fields.getTextInputValue("studentname")}`)
+                .addField('Student Number',`${ interaction.fields.getTextInputValue("studentnumber")}`)
+            const row = new discord.MessageActionRow()
+            .addComponents(
+                new discord.MessageButton()
+                    .setCustomId('deletemessage')
+                    .setEmoji('')
+                    .setLabel('Delete Message')
+                    .setStyle('DANGER')
+            )
+            execchannel.send({embeds: [embed], components: [row] });
+            await interaction.deferReply({ ephemeral: true })
+            interaction.followUp({ content: 'Your request has been sent to execs!', ephemeral: true })
+    
+        }  
+    }
+    
+
 });
