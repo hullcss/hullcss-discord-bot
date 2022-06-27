@@ -6,8 +6,9 @@
 name: Publish Docker image
 
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - 'main'
 
 jobs:
   push_to_registries:
@@ -38,7 +39,7 @@ jobs:
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
           images: |
-            my-docker-hub-namespace/my-docker-hub-repository
+            ${{ secrets.DOCKERHUB_USERNAME }}/hullcss:latest
             ghcr.io/${{ github.repository }}
       
       - name: Build and push Docker images
