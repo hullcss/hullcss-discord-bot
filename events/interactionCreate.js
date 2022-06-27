@@ -1,4 +1,3 @@
-
 const client = require("../index");
 const discord = require("discord.js")
 
@@ -32,10 +31,9 @@ client.on("interactionCreate", async (interaction) => {
         const command = client.slashCommands.get(interaction.commandName);
         if (command) command.run(client, interaction);
     }
-
-        // Context Menu Handling
-        if (interaction.isButton()) 
-        {
+    
+    // Button Handling
+    if (interaction.isButton()) {
             if(interaction.customId == "codeOfConduct"){
                 interaction.member.roles.add("973646380771979304")
                 await interaction.reply({ content: 'Roles have been updated', ephemeral: true});
@@ -83,10 +81,10 @@ client.on("interactionCreate", async (interaction) => {
                     interaction.channel.setArchived(true)
                 }
             }
-        }
+    }
 
-    if(interaction.isSelectMenu()) 
-    {
+    // Select Menu Handling
+    if(interaction.isSelectMenu()) {
         if(interaction.customId == "yearSelect")
         {
             if(interaction.values.includes("0"))
@@ -262,8 +260,8 @@ client.on("interactionCreate", async (interaction) => {
         }
     }
 
-    if(interaction.isModalSubmit)
-    {
+    // Modal Handling
+    if(interaction.isModalSubmit) {
         if(interaction.customId === 'modal-paidmember'){
             const execchannel = client.channels.cache.get('981678376655921153')
     
