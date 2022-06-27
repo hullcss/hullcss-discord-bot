@@ -17,6 +17,6 @@ module.exports = {
         .setFooter(`Called By: ${interaction.user.tag}`)
         .setDescription('Robotics Society are a society where you can gain skills in building an actual robot, or get help with your assignments or exams, but they also run social nights where they go out to do stuff.')
         .addField('You can join them from below!','https://discord.gg/cMP5CavnK4')
-        interaction.followUp({ embeds: [embed]});
+        interaction.reply({ embeds: [embed]});
     },
 };

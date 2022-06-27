@@ -11,6 +11,6 @@ module.exports = {
      * @param {String[]} args
      */
     run: async (client, interaction, args) => {
-        interaction.followUp({ files: ['https://c.tenor.com/N8A8lQ3g0YIAAAAd/chaseatlanticgifs-sarahmcfadyen.gif']  });
+        interaction.reply({ files: ['https://c.tenor.com/N8A8lQ3g0YIAAAAd/chaseatlanticgifs-sarahmcfadyen.gif']  });
     },
 };

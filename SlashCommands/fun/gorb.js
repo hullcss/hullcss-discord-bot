@@ -27,27 +27,27 @@ module.exports = {
         const string = interaction.options.getString('type');
 
         if(string == null){
-            interaction.followUp({ files: ['./images/gorb.jpg'] })
+            await interaction.reply({ files: ['./images/gorb.jpg'] })
         }
-        if(string === 'cs'){
-            interaction.followUp({ files: ['./images/gorbcs.jpg'] })
-        }
-
-        if(string === 'party'){
-            interaction.followUp({ files: ['./images/gorbcelebration.png'] })
-        }
-
         
-        if(string === 'christmas'){
-            interaction.followUp({ files: ['./images/gorbchristmas.png'] })
+        if(string == 'cs'){
+            await interaction.reply({ files: ['./images/gorbcs.jpg'] })
         }
 
-        if(string === 'storm'){
-            interaction.followUp({ files: ['./images/gorbstorm.png'] })
+        if(string == 'party'){
+            await interaction.reply({ files: ['./images/gorbcelebration.png'] })
+        }
+
+        if(string == 'christmas'){
+            await interaction.reply({ files: ['./images/gorbchristmas.png'] })
+        }
+        
+        if(string == 'storm'){
+            await interaction.reply({ files: ['./images/gorbstorm.png'] })
         }
 
         if(string == 'large'){
-            interaction.followUp({ files: ['./images/gorblarge.png'] })
+            await interaction.reply({ files: ['./images/gorblarge.png'] })
         }
 
 

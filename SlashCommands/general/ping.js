@@ -23,6 +23,6 @@ module.exports = {
         .setTitle("Pong!")
         .setDescription(`${client.ws.ping} ping to host`)
         .addField('Uptime', ` ${days}days ${hours}hrs ${minutes}min ${seconds}sec`, true)
-        interaction.followUp({ embeds: [embed]});
+        interaction.reply({ embeds: [embed]});
     },
 };

@@ -16,7 +16,7 @@ module.exports = {
         .setColor('GREEN')
         .setFooter(`Called By: ${interaction.user.tag}`)
         .addField('You can purchase from below!','https://hulluniunion.com/shop?aid=304')
-        interaction.followUp({ embeds: [embed] });
+        interaction.reply({ embeds: [embed] });
     },
 };
 

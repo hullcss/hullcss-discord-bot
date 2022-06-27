@@ -36,6 +36,6 @@ module.exports = {
         .setTimestamp()
         .setTitle("8ball")
         .addField(`${questionToSend}`,`${Responses[Math.floor(Math.random() * Responses.length)]}`)
-        interaction.followUp({ embeds: [embed]});
+        interaction.reply({ embeds: [embed]});
     },
 };

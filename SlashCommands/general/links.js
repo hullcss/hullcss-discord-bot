@@ -16,6 +16,6 @@ module.exports = {
         .setColor('GREEN')
         .setFooter(`Called By: ${interaction.user.tag}`)
         .addField('Find us here:','https://hullcss.org/links')
-        interaction.followUp({ embeds: [embed]});
+        interaction.reply({ embeds: [embed]});
     },
 };
