@@ -29,6 +29,8 @@ module.exports = {
             const embed = new discord.MessageEmbed()
             .setTitle("Admin Commands")
             .setColor('GREEN')
+
+
             message.channel.send({ embeds: [embed] });
         }
     
@@ -54,6 +56,7 @@ module.exports = {
 
             .addField('!8ball', 'Answer your deepest questions.')
             .addField('!gorb', 'guinea pig orb')
+            .addField('!torch', 'Light the way')
             message.channel.send({ embeds: [embed] });
         }
 
