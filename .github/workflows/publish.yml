@@ -39,7 +39,7 @@ jobs:
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
           images: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/hullcss:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/hullcss
             ghcr.io/${{ github.repository }}
       
       - name: Build and push Docker images
