@@ -4,8 +4,16 @@ const client = require("../index");
 
 client.on('ready', () => {
     console.log('HullCSS is online')
-    client.user.setActivity(`!help | hullcss.org`, {type:"WATCHING"})
 
+    const Activities = [
+        "!help", 
+        "Hullcss.org", 
+        "Slash Commands", 
+    ];
+
+    setInterval(() =>{
+    client.user.setActivity(Activities[Math.floor(Math.random() * Activities.length)], {type:"WATCHING"})
+    }, 180000);
 
     setInterval(() =>{
         const memberCount = client.guilds.cache.get('427865794467069962').memberCount
