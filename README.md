@@ -6,7 +6,6 @@ This bot features multiple command types from:
 * Embeds
 * Fun
 * General
-
 * Slash Commands
 
 Alongside commands, this bot also features:
