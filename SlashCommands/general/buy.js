@@ -2,7 +2,7 @@ const { Client, CommandInteraction, MessageEmbed } = require("discord.js");
 
 module.exports = {
     name: "buy",
-    description: "returns mmembership purchase link",
+    description: "returns membership purchase link",
     type: 'CHAT_INPUT',
     /**
      *
