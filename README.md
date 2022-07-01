@@ -1,5 +1,13 @@
+<center>
+![image](/images/icon_2.png)
+
 # HullCSS Discord Bot
-> This bot is a multipurpose discord bot for The Hull Computer Science Society Discord server. 
+
+This bot is a multipurpose discord bot for The Hull Computer Science Society Discord server. 
+
+<img src="https://img.shields.io/badge/discord.js-v13-7354F6?logo=discord&logoColor=white&style=flat-square" />
+
+</center>
 
 This bot features multiple command types from:
 * Admin
@@ -9,10 +17,10 @@ This bot features multiple command types from:
 * Slash Commands
 
 Alongside commands, this bot also features:
-* Auto threading in help channel to keep it clean
+* Auto threading in `#coursework-help` channel to keep it clean
 * Auto embedding of events for information and archiving
-* Select menu role system
-* Rule agreement button embed
+* Select menu role system within `#roles`
+* Rule agreement button embed with `#code-of-conduct`
 
 ---
 ## Installation 
