@@ -18,7 +18,7 @@ module.exports = {
 
         const embed = new MessageEmbed()
         .setColor('GREEN')
-        .setFooter(`Called By: ${message.author.tag}`)
+        .setFooter({ text: `Called By: ${message.author.tag}`}) 
         .setTimestamp()
         .setTitle("Pong!")
         .setDescription(`${client.ws.ping} ping to host`)

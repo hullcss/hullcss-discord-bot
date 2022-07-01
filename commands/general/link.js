@@ -13,7 +13,7 @@ module.exports = {
         const embed = new discord.MessageEmbed()
         .setTitle("Links!")
         .setColor('GREEN')
-        .setFooter(`Called By: ${message.author.tag}`)
+        .setFooter({ text: `Called By: ${message.author.tag}`}) 
         .addField('Find us here:','https://hullcss.org/links')
         message.channel.send({ embeds: [embed] });
 

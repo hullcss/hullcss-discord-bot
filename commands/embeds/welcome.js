@@ -12,7 +12,7 @@ module.exports = {
     run: async (client, message, args) => {
             const embed = new discord.MessageEmbed()
             .setColor('GREEN')
-            .setFooter(`Called By: ${message.author.tag}`)
+            .setFooter({ text: `Called By: ${message.author.tag}`}) 
             .setTimestamp()
             .setTitle("Welcome!")
             .setDescription(`We're the official student-run Computer Science Society at Hull, set up with the aim of providing engaging events for students with an interest in Computer Science. This basically means our role is to make life outside of your course as fun and interesting as possible, organising both social and technical events for you.`)

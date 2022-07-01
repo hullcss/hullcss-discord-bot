@@ -14,7 +14,7 @@ module.exports = {
         const embed = new MessageEmbed()
         .setTitle("Links!")
         .setColor('GREEN')
-        .setFooter(`Called By: ${interaction.user.tag}`)
+        .setFooter({ text: `Called By: ${interaction.user.tag}`})
         .addField('Find us here:','https://hullcss.org/links')
         interaction.reply({ embeds: [embed]});
     },

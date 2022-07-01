@@ -2,13 +2,15 @@
 
 ![icon_2](https://user-images.githubusercontent.com/32241933/176943810-d3016868-d91b-49cc-9461-ae01b7ffa44d.png)
 
-# HullCSS Discord Bot
+## HullCSS Discord Bot
 
 This bot is a multipurpose discord bot for The Hull Computer Science Society Discord server. 
 
 <img src="https://img.shields.io/badge/discord.js-v13-7354F6?logo=discord&logoColor=white&style=flat-square" />
 
 </div align="center">
+
+---
 
 This bot features multiple command types from:
 * Admin

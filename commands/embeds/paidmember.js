@@ -10,9 +10,12 @@ module.exports = {
      * @param {String[]} args
      */
     run: async (client, message, args) => {
-            const embed = new discord.MessageEmbed()
+
+        if(!message.member.permissions.has(Permissions.FLAGS.BAN_MEMBERS, Permissions.FLAGS.ADMINISTRATOR)) return message.channel.send("You don't have permission to use that command.")
+
+        const embed = new discord.MessageEmbed()
             .setColor('GREEN')
-            .setFooter(`Called By: ${message.author.tag}`)
+            .setFooter({ text: `Called By: ${message.author.tag}`}) 
             .setTimestamp()
             .setTitle("Paid Member!")
             .setDescription(`Press the button below to get access to the paid member role.`)
@@ -20,8 +23,7 @@ module.exports = {
             .addField('Pay for a membership', 'Press the grey button below!')
             .setThumbnail('https://i.imgur.com/ww6wKwJ.png')
 
-
-            const row = new discord.MessageActionRow()
+        const row = new discord.MessageActionRow()
             .addComponents(
                 new discord.MessageButton()
                 .setURL('https://hulluniunion.com/shop?aid=304')
@@ -29,7 +31,7 @@ module.exports = {
                 .setLabel('Pay for a membership!')
                 .setStyle('LINK')
             )
-			.addComponents(
+            .addComponents(
                 new discord.MessageButton()
                 .setCustomId('paidModal')
                 .setLabel('Paid Member Request')

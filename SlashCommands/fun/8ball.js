@@ -32,7 +32,7 @@ module.exports = {
 
         const embed = new MessageEmbed()
         .setColor('GREEN')
-        .setFooter(`Called By: ${interaction.user.tag}`)
+        .setFooter({ text: `Called By: ${interaction.user.tag}`})         
         .setTimestamp()
         .setTitle("8ball")
         .addField(`${questionToSend}`,`${Responses[Math.floor(Math.random() * Responses.length)]}`)
