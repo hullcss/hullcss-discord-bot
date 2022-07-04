@@ -1,4 +1,4 @@
-const { Permissions } = require('discord.js');
+const { MessageAttachment } = require('discord.js');
 const client = require("../index");
 const discord = require('discord.js');
 
@@ -7,18 +7,26 @@ client.on('guildScheduledEventCreate', async guildScheduledEvent =>{
     const channel = client.channels.cache.get('973686987787751534')
     const embed = new discord.MessageEmbed()
     .setColor('GREEN')
-    .setFooter(`Created by ${guildScheduledEvent.creator.tag}`)
+    .setFooter(`Created by ${guildScheduledEvent.creatorId}`)
     .setTimestamp()
     .setTitle("New Event")
-    .setImage(guildScheduledEvent.image)
+    .setImage(`https://cdn.discordapp.com/guild-events/${guildScheduledEvent.id}/${guildScheduledEvent.image}.png`)
     .addField('Name:', `${guildScheduledEvent.name}`)
     .addField('Description', `${guildScheduledEvent.description}`)
-    .addField('Location', `Please check the URL linked.`)
-    .addField('Start Date and Time', ` ${guildScheduledEvent.scheduledStartAt.toLocaleDateString("en-UK")}`, true)
+    if(guildScheduledEvent.entityType !== 'EXTERNAL')
+    {
+        embed.addField('Location', `${guildScheduledEvent.channel.name} - [Link](https://discordapp.com/channels/427865794467069962/${guildScheduledEvent.channelId})`)
+    }
+    else{
+        embed.addField('Location', `External - ${guildScheduledEvent.entityMetadata.location}`)
+    }
+    embed.addField('Start Date and Time', ` ${guildScheduledEvent.scheduledStartAt.toLocaleString('en-UK')}`, true)
     if(guildScheduledEvent.scheduledEndAt !== null)
     {
-        embed.addField('End Date and Time', `${guildScheduledEvent.scheduledEndAt.toLocaleDateString("en-UK")}`, true)
+        embed.addField('End Date and Time', `${guildScheduledEvent.scheduledEndAt.toLocaleString("en-UK")}`, true)
     }
     embed.addField('InviteURL', `${guildScheduledEvent.url}`)
-    channel.send({ embeds: [embed] })
+
+
+    channel.send({ embeds: [embed]})
 })
