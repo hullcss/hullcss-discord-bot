@@ -269,6 +269,7 @@ client.on("interactionCreate", async (interaction) => {
                 .addField('Discord Tag', `${ interaction.user} <- Click to add role.`)
                 .addField('Student Name', `${ interaction.fields.getTextInputValue("studentname")}`)
                 .addField('Student Number',`${ interaction.fields.getTextInputValue("studentnumber")}`)
+                .setDescription('https://hulluniunion.com/')
             const row = new discord.MessageActionRow()
             .addComponents(
                 new discord.MessageButton()

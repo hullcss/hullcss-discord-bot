@@ -26,7 +26,5 @@ client.on('guildScheduledEventCreate', async guildScheduledEvent =>{
         embed.addField('End Date and Time', `${guildScheduledEvent.scheduledEndAt.toLocaleString("en-UK")}`, true)
     }
     embed.addField('InviteURL', `${guildScheduledEvent.url}`)
-
-
     channel.send({ embeds: [embed]})
 })
