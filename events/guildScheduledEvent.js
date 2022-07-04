@@ -7,7 +7,7 @@ client.on('guildScheduledEventCreate', async guildScheduledEvent =>{
     const channel = client.channels.cache.get('973686987787751534')
     const embed = new discord.MessageEmbed()
     .setColor('GREEN')
-    .setFooter(`Created by ${guildScheduledEvent.creator}`)
+    .setFooter(`Created by ${guildScheduledEvent.creator.tag}`)
     .setTimestamp()
     .setTitle("New Event")
     .addField('Name:', `${guildScheduledEvent.name}`)
