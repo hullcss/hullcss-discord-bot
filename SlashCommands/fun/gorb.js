@@ -35,15 +35,15 @@ module.exports = {
         }
 
         if(string == 'party'){
-            await interaction.reply({ files: ['./images/gorbcelebration.png'] })
+            await interaction.reply({ files: ['./images/gorbcelebration.PNG'] })
         }
 
         if(string == 'christmas'){
-            await interaction.reply({ files: ['./images/gorbchristmas.png'] })
+            await interaction.reply({ files: ['./images/gorbchristmas.PNG'] })
         }
         
         if(string == 'storm'){
-            await interaction.reply({ files: ['./images/gorbstorm.png'] })
+            await interaction.reply({ files: ['./images/gorbstorm.PNG'] })
         }
 
         if(string == 'large'){
