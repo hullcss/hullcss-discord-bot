@@ -19,16 +19,16 @@ module.exports = {
         }
 
         if(args[0] === 'party'){
-            message.channel.send({ files: ['./images/gorbcelebration.png'] })
+            message.channel.send({ files: ['./images/gorbcelebration.PNG'] })
         }
 
         
         if(args[0] === 'christmas'){
-            message.channel.send({ files: ['./images/gorbchristmas.png'] })
+            message.channel.send({ files: ['./images/gorbchristmas.PNG'] })
         }
 
         if(args[0] === 'storm'){
-            message.channel.send({ files: ['./images/gorbstorm.png'] })
+            message.channel.send({ files: ['./images/gorbstorm.PNG'] })
         }
 
         if(args[0] == 'large'){
