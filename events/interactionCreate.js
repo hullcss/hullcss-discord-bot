@@ -33,8 +33,16 @@ client.on("interactionCreate", async (interaction) => {
     // Button Handling
     if (interaction.isButton()) {
             if(interaction.customId == "codeOfConduct"){
-                interaction.member.roles.add("973646380771979304")
-                await interaction.reply({ content: 'Roles have been updated', ephemeral: true});
+                if(interaction.member.roles.cache.has("973646380771979304"))
+                {
+                    interaction.reply({ content: 'You already have agreed to the code of conduct!', ephemeral: true})
+                } 
+                else
+                {
+                    interaction.member.roles.add("973646380771979304")
+                    await interaction.reply({ content: 'Thank you for agreeing to the code of conduct!\r\nYou can now access the rest of the server!', ephemeral: true});
+                }
+
             }
 
             if(interaction.customId == "paidModal")
