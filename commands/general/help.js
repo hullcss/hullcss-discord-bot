@@ -14,7 +14,7 @@ module.exports = {
         if(!args[0]){
             const embed = new discord.MessageEmbed()
             .setTitle("HullCSS Help")
-            .setDescription("You can use `!help <category>` to get additional commands within a specfic category")
+            .setDescription("You can use `!help <category>` to get additional commands within a specific category")
             .setColor('GREEN')
     
             .addField('❓`!help`','This Command', true)
@@ -38,7 +38,7 @@ module.exports = {
     
         if(args[0] === 'general'){
             const embed = new discord.MessageEmbed()
-            .setTitle("General Comamnds")
+            .setTitle("General Commands")
             .setColor('GREEN')
 
             .addField('!buy', 'Sends a link to purchase membership')
@@ -51,7 +51,7 @@ module.exports = {
         
         if(args[0] === 'fun'){
             const embed = new discord.MessageEmbed()
-            .setTitle("Fun Comamnds")
+            .setTitle("Fun Commands")
             .setColor('GREEN')
 
             .addField('!8ball', 'Answer your deepest questions.')
@@ -63,7 +63,7 @@ module.exports = {
         
         if(args[0] === 'gorb'){
             const embed = new discord.MessageEmbed()
-            .setTitle("Gorb Comamnds")
+            .setTitle("Gorb Commands")
             .setColor('GREEN')
             .addField('!gorb cs', 'CS Gorb')
             .addField('!gorb party', 'Party Gorb')

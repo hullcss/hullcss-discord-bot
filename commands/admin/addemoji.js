@@ -12,7 +12,6 @@ module.exports = {
      */
     run: async (client, message, args) => {
       if(!message.member.permissions.has(Permissions.FLAGS.MANAGE_EMOJIS_AND_STICKERS, Permissions.FLAGS.ADMINISTRATOR))
-      // if someone dont hv perm it will send this message
       message.channel.send("You don't have permission to use that command.");
   
       else {

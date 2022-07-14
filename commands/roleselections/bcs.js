@@ -27,7 +27,7 @@ module.exports = {
 
             },
             {
-                label:"Proffesional Member",
+                label:"Professional Member",
                 value:"bcsProf",
             },
             {
