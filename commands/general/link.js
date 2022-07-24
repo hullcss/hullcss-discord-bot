@@ -14,7 +14,7 @@ module.exports = {
         .setTitle("Links!")
         .setColor('GREEN')
         .setFooter({ text: `Called By: ${message.author.tag}`}) 
-        .addField('Find us here:','https://hullcss.org/links')
+        .addField('Find us here:','https://hullcss.org')
         message.channel.send({ embeds: [embed] });
 
 
