@@ -11,6 +11,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "dalle-node": "^1.0.5",
         "discord.js": "^13.8.1",
         "dotenv": "^16.0.1",
         "glob": "^7.2.3"

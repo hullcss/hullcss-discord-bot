@@ -6,7 +6,7 @@ client.on("interactionCreate", async (interaction) => {
     if (interaction.isCommand()) {
         const cmd = client.slashCommands.get(interaction.commandName);
         if (!cmd)
-            return interaction.followUp({ content: "An error has occured " });
+            return interaction.reply({ content: "An error has occured " });
 
         const args = [];
 
@@ -42,8 +42,10 @@ client.on("interactionCreate", async (interaction) => {
                     interaction.member.roles.add("973646380771979304")
                     await interaction.reply({ content: 'Thank you for agreeing to the code of conduct!\r\nYou can now access the rest of the server!', ephemeral: true});
                 }
-
             }
+
+
+            
 
             if(interaction.customId == "paidModal")
             {
