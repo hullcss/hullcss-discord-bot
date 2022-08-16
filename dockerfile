@@ -1,4 +1,4 @@
-FROM node:16.15.0
+FROM node:16.16.0
 
 RUN mkdir -p /usr/hullcss
 WORKDIR /usr/hullcss
