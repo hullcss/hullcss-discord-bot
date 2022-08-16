@@ -1,13 +1,16 @@
 <div align="center">
 
-![icon_2](https://user-images.githubusercontent.com/32241933/176943810-d3016868-d91b-49cc-9461-ae01b7ffa44d.png)
+<img src="https://user-images.githubusercontent.com/32241933/176943810-d3016868-d91b-49cc-9461-ae01b7ffa44d.png" width="150" height="150">
+
 
 ## HullCSS Discord Bot
 
 This bot is a multipurpose discord bot for The Hull Computer Science Society Discord server. 
 
-<img src="https://img.shields.io/badge/discord.js-v13-7354F6?logo=discord&logoColor=white&style=flat-square" />
-
+<img src="https://img.shields.io/github/workflow/status/hullcss/hullcss-discord-bot/Publish%20Docker%20image?style=for-the-badge">
+<img src="https://img.shields.io/badge/Discord.JS-13.10.2-blue?style=for-the-badge&logo=DISCORD" />
+<img src="https://img.shields.io/badge/Node%20Version-16.16.0-brightgreen?style=for-the-badge&logo=Node.js">
+<img src="https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge">
 </div align="center">
 
 ---
@@ -47,9 +50,9 @@ Using a tool like [Ouroboros](https://github.com/pyouroboros/ouroboros), you can
 ### 👷 Manual
 - Clone the repo 
 - Remove the `.template` from `.env.template`
-- Add Discord Bot Token where `DISCORD_TOKEN` is within the `.env` file 
-- Run `npm i`
-- Run `node .`
+- Replace `INSERT DISCORD TOKEN` with your Discord token.
+- Run `npm i` toinstall packages
+- Run `node .` to run the bot
 
 ---
 ## Contributions
