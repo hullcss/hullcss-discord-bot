@@ -13,8 +13,6 @@ This bot is a multipurpose discord bot for The Hull Computer Science Society Dis
 <img src="https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge">
 </div align="center">
 
-
-
 ---
 
 This bot features multiple command types from:
@@ -52,9 +50,9 @@ Using a tool like [Ouroboros](https://github.com/pyouroboros/ouroboros), you can
 ### 👷 Manual
 - Clone the repo 
 - Remove the `.template` from `.env.template`
-- Add Discord Bot Token where `DISCORD_TOKEN` is within the `.env` file 
-- Run `npm i`
-- Run `node .`
+- Replace `INSERT DISCORD TOKEN` with your Discord token.
+- Run `npm i` toinstall packages
+- Run `node .` to run the bot
 
 ---
 ## Contributions
