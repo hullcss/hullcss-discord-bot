@@ -1,6 +1,7 @@
 <div align="center">
 
-![icon_2](https://user-images.githubusercontent.com/32241933/176943810-d3016868-d91b-49cc-9461-ae01b7ffa44d.png)
+<img src="https://user-images.githubusercontent.com/32241933/176943810-d3016868-d91b-49cc-9461-ae01b7ffa44d.png" width="150" height="150">
+
 
 ## HullCSS Discord Bot
 
