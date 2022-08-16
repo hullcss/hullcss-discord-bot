@@ -25,7 +25,7 @@ client.on("messageCreate", async (message) => {
         (await thread).send({
             content: `Hey <@${message.author.id}>! I've automatically created this thread from your message to keep the channel clean and keep messages condensed. 
                 \nIt is recommended that you change the Notification Settings for this thread to All Messages so that you get a notification when someone has responded to your query.
-                \nFeel free to pint the coursework help ping if you would like a hand!`,
+                \nFeel free to ping '@Coursework Help if you would like a hand!`,
             components: [row]
         });
 
