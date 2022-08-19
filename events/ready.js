@@ -4,7 +4,6 @@ client.on('ready', () => {
     console.log('HullCSS is online')
 
     const Activities = [
-        "!help", 
         "Hullcss.org", 
         "Slash Commands", 
     ];
