@@ -1,5 +1,3 @@
-const discord = require("discord.js");
-
 module.exports = {
     name: "lampadaferens",
     aliases: [''],

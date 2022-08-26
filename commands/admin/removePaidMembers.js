@@ -1,4 +1,4 @@
-const { Discord, Client, Message, MessageEmbed, Permissions } = require('discord.js');
+const { Client, Message } = require('discord.js');
 
 module.exports = {
     name: 'nukepaid',

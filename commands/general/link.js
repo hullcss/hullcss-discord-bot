@@ -1,4 +1,4 @@
-const discord = require("discord.js");
+const { MessageEmbed } = require("discord.js");
 
 module.exports = {
     name: "links",
@@ -10,7 +10,7 @@ module.exports = {
      * @param {String[]} args
      */
     run: async (client, message, args) => {
-        const embed = new discord.MessageEmbed()
+        const embed = new MessageEmbed()
         .setTitle("Links!")
         .setColor('GREEN')
         .setFooter({ text: `Called By: ${message.author.tag}`}) 
