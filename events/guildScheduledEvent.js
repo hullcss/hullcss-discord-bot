@@ -6,7 +6,7 @@ client.on('guildScheduledEventCreate', async guildScheduledEvent =>{
     const channel = client.channels.cache.get('973686987787751534')
     const embed = new MessageEmbed()
     .setColor('GREEN')
-    .setFooter(`Created by ${guildScheduledEvent.creatorId}`)
+    .setFooter({text: `Created by ${guildScheduledEvent.creator.tag}`})
     .setTimestamp()
     .setTitle("New Event")
     .setImage(`https://cdn.discordapp.com/guild-events/${guildScheduledEvent.id}/${guildScheduledEvent.image}.png`)

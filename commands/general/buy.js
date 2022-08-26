@@ -13,7 +13,7 @@ module.exports = {
         const embed = new MessageEmbed()
         .setTitle("Thanks for considering to become a paid member!")
         .setColor('GREEN')
-        .setFooter(`Called By: ${message.author.tag}`)
+        .setFooter({text: `Called By: ${message.author.tag}`})
         .addField('You can purchase from below!','https://hulluniunion.com/shop?aid=304')
         message.channel.send({ embeds: [embed] });
     }
