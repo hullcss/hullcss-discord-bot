@@ -1,20 +1,25 @@
-const { Client, Message, Permissions } = require('discord.js');
+const { Client, CommandInteraction, Permissions } = require("discord.js");
+const { SlashCommandBuilder } = require('@discordjs/builders');
+const { PermissionFlagsBits } = require('discord-api-types/v10');
+
 
 module.exports = {
-    name: 'unlock',
-    aliases: [''],
-    /** 
-     * @param {Client} client 
-     * @param {Message} message 
-     * @param {String[]} args 
+    ...new SlashCommandBuilder()
+        .setName('unlock')
+        .setDescription('Unlock a channel')
+        .setDefaultMemberPermissions(PermissionFlagsBits.KickMembers | PermissionFlagsBits.BanMembers),
+    /**
+     *
+     * @param {Client} client
+     * @param {CommandInteraction} interaction
+     * @param {String[]} args
      */
-    run: async(client, message, args) => {
+    run: async (client, interaction, args) => {
 
-        const permission = message.member.permissions.has(Permissions.FLAGS.MANAGE_CHANNELS)
-        if (!permission)return message.reply({ contents: "You don't have permission to use this command" });
-        
-        message.channel.permissionOverwrites.edit(message.guild.roles.everyone.id, {SEND_MESSAGES: true});
+        const permission = interaction.member.permissions.has(Permissions.FLAGS.MANAGE_CHANNELS)
+        if (!permission)return interaction.reply({ contents: "You don't have permission to use this command", ephemeral: true });
+        interaction.channel.permissionOverwrites.edit(interaction.guild.roles.everyone.id, {SEND_MESSAGES: true});
+        interaction.reply("Channel has been unlocked.")
 
-        message.channel.send("Channel has been unlocked.")
-    }
-}
+    },
+};
