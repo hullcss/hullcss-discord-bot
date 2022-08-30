@@ -63,10 +63,12 @@ client.on("interactionCreate", async (interaction) => {
                         .setLabel("Student Name")
                         .setStyle("SHORT")
                         .setCustomId("studentname")
+                        .setPlaceholder(`Joe Bloggs`)
                     const studentnumber = new discord.TextInputComponent()                        
                         .setLabel("Student Number")
                         .setStyle("SHORT")
                         .setCustomId("studentnumber")
+                        .setPlaceholder(`202001234`)
                     const firstActionRow = new discord.MessageActionRow().addComponents(studentname);
                     const secondActionRow = new discord.MessageActionRow().addComponents(studentnumber);   
                     modal.addComponents(firstActionRow, secondActionRow);
