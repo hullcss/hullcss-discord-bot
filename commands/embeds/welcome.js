@@ -1,4 +1,4 @@
-const discord = require("discord.js");
+const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
 
 module.exports = {
     name: "welcome",
@@ -10,7 +10,7 @@ module.exports = {
      * @param {String[]} args
      */
     run: async (client, message, args) => {
-            const embed = new discord.MessageEmbed()
+            const embed = new MessageEmbed()
             .setColor('GREEN')
             .setFooter({ text: `Called By: ${message.author.tag}`}) 
             .setTimestamp()
@@ -22,16 +22,16 @@ module.exports = {
             .addField('Gain Access', `To gain access to the server, you will need to have a read of the code of conduct, found here: https://github.com/hullcss/conduct/ and react to the check mark below.\r\n \r\n **All Members, including Community are required to read this policy to access the server.**`)
             .addField('Confirmation', 'By reacting with the check mark, you confirm that you have read the #hullcss Code of Conduct')
 
-            const row = new discord.MessageActionRow()
+            const row = new MessageActionRow()
 			.addComponents(
-                new discord.MessageButton()
+                new MessageButton()
                 .setURL('https://github.com/hullcss/conduct/')
                 .setEmoji('')
                 .setLabel('Code of Conduct')
                 .setStyle('LINK')
             )
             .addComponents(
-				new discord.MessageButton()
+				new MessageButton()
                 .setCustomId('codeOfConduct')
                 .setEmoji('✅')
                 .setLabel(' I have read the code of conduct!')

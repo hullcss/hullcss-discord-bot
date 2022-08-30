@@ -1,4 +1,4 @@
-const discord = require("discord.js");
+const {MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
 
 module.exports = {
     name: "paidmember",
@@ -13,7 +13,7 @@ module.exports = {
 
         if(!message.member.permissions.has(Permissions.FLAGS.BAN_MEMBERS, Permissions.FLAGS.ADMINISTRATOR)) return message.channel.send("You don't have permission to use that command.")
 
-        const embed = new discord.MessageEmbed()
+        const embed = new MessageEmbed()
             .setColor('GREEN')
             .setFooter({ text: `Called By: ${message.author.tag}`}) 
             .setTimestamp()
@@ -23,16 +23,16 @@ module.exports = {
             .addField('Pay for a membership', 'Press the grey button below!')
             .setThumbnail('https://i.imgur.com/ww6wKwJ.png')
 
-        const row = new discord.MessageActionRow()
+        const row = new MessageActionRow()
             .addComponents(
-                new discord.MessageButton()
+                new MessageButton()
                 .setURL('https://hulluniunion.com/shop?aid=304')
                 .setEmoji('')
                 .setLabel('Pay for a membership!')
                 .setStyle('LINK')
             )
             .addComponents(
-                new discord.MessageButton()
+                new MessageButton()
                 .setCustomId('paidModal')
                 .setLabel('Paid Member Request')
                 .setStyle('PRIMARY')
