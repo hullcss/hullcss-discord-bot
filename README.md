@@ -51,7 +51,7 @@ Using a tool like [Ouroboros](https://github.com/pyouroboros/ouroboros), you can
 - Clone the repo 
 - Remove the `.template` from `.env.template`
 - Replace `INSERT DISCORD TOKEN` with your Discord token.
-- Run `npm i` toinstall packages
+- Run `npm i` to install packages
 - Run `node .` to run the bot
 
 ---
