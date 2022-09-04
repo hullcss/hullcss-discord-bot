@@ -8,9 +8,8 @@ client.on('guildScheduledEventCreate', async guildScheduledEvent =>{
     .setColor('GREEN')
     .setFooter({text: `Created by ${guildScheduledEvent.creator.tag}`})
     .setTimestamp()
-    .setTitle("New Event")
+    .setTitle(guildScheduledEvent.name)
     .setImage(`https://cdn.discordapp.com/guild-events/${guildScheduledEvent.id}/${guildScheduledEvent.image}.png`)
-    .addField('Name:', `${guildScheduledEvent.name}`)
     .addField('Description', `${guildScheduledEvent.description}`)
 
     if(guildScheduledEvent.entityType !== 'EXTERNAL')
@@ -21,11 +20,11 @@ client.on('guildScheduledEventCreate', async guildScheduledEvent =>{
         embed.addField('Location', `External - ${guildScheduledEvent.entityMetadata.location}`)
     }
 
-    embed.addField('Start Date and Time', ` ${guildScheduledEvent.scheduledStartAt.toLocaleString('en-UK')}`, true)
+    embed.addField('Start Date and Time', ` ${guildScheduledEvent.scheduledStartAt.toLocaleString('en-UK, BST', { timeZone: "Europe/London" })}`, true)
 
     if(guildScheduledEvent.scheduledEndAt !== null)
     {
-        embed.addField('End Date and Time', `${guildScheduledEvent.scheduledEndAt.toLocaleString("en-UK")}`, true)
+        embed.addField('End Date and Time', `${guildScheduledEvent.scheduledEndAt.toLocaleString("en-UK", { timeZone: "Europe/London" })}`, true)
     }
     
     embed.addField('InviteURL', `${guildScheduledEvent.url}`)
