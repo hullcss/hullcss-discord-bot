@@ -4,12 +4,12 @@ const client = require("../index");
 client.on('guildScheduledEventCreate', async guildScheduledEvent =>{
     const channel = client.channels.cache.get('973686987787751534')
     const embed = new MessageEmbed()
+    .setTitle(guildScheduledEvent.name)
+    .setDescription(guildScheduledEvent.description)
     .setColor('GREEN')
     .setFooter({text: `Created by ${guildScheduledEvent.creator.tag}`})
     .setTimestamp()
-    .setTitle(guildScheduledEvent.name)
     .setImage(`https://cdn.discordapp.com/guild-events/${guildScheduledEvent.id}/${guildScheduledEvent.image}.png`)
-    .addField('Description', `${guildScheduledEvent.description}`)
 
     if(guildScheduledEvent.entityType !== 'EXTERNAL')
     {
