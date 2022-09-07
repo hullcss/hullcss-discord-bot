@@ -83,14 +83,13 @@ client.on("interactionCreate", async (interaction) => {
                 await interaction.reply({ content: 'Message has been deleted', ephemeral: true});
             }
 
-            if(interaction.isButton)
+
+            if(interaction.customId == "CloseThread")
             {
-                if(interaction.customId == "CloseThread")
-                {
                     interaction.reply(`This channel has been archived, you can unarchive this thread by sending another message.`) 
                     interaction.channel.setArchived(true)
-                }
             }
+            
     }
 
     // Select Menu Handling

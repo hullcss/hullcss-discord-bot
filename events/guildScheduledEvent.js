@@ -1,5 +1,6 @@
-const { MessageEmbed } = require('discord.js');
 const client = require("../index");
+const { MessageEmbed } = require('discord.js');
+const { time } = require("@discordjs/builders");
 
 client.on('guildScheduledEventCreate', async guildScheduledEvent =>{
     const channel = client.channels.cache.get('973686987787751534')
@@ -20,10 +21,10 @@ client.on('guildScheduledEventCreate', async guildScheduledEvent =>{
         embed.addField('Location', `External - ${guildScheduledEvent.entityMetadata.location}`)
     }
 
-    embed.addField('Start Date and Time', ` ${guildScheduledEvent.scheduledStartAt.toLocaleString('en-UK', { timeZone: "Europe/London" })}`, true)
+    embed.addField('Start Date and Time', `${guildScheduledEvent.scheduledStartTimestamp ? time(guildScheduledEvent.scheduledStartTimestamp, "F") : "Unknown"}`, true)
     if(guildScheduledEvent.scheduledEndAt !== null)
     {
-        embed.addField('End Date and Time', `${guildScheduledEvent.scheduledEndAt.toLocaleString("en-UK", { timeZone: "Europe/London" })}`, true)
+        embed.addField('End Date and Time', `${guildScheduledEvent.scheduledEndTimestamp ? time(guildScheduledEvent.scheduledEndTimestamp, "F") : "Unknown"}`, true)
     }
     
     embed.addField('InviteURL', `${guildScheduledEvent.url}`)
