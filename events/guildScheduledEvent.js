@@ -21,10 +21,10 @@ client.on('guildScheduledEventCreate', async guildScheduledEvent =>{
         embed.addField('Location', `External - ${guildScheduledEvent.entityMetadata.location}`)
     }
 
-    embed.addField('Start Date and Time', `${guildScheduledEvent.scheduledStartTimestamp ? time(guildScheduledEvent.scheduledStartTimestamp, "F") : "Unknown"}`, true)
+    embed.addField('Start Date and Time', `${guildScheduledEvent.scheduledStartAt ? time(guildScheduledEvent.scheduledStartAt, "F") : "Unknown"}`, true)
     if(guildScheduledEvent.scheduledEndAt !== null)
     {
-        embed.addField('End Date and Time', `${guildScheduledEvent.scheduledEndTimestamp ? time(guildScheduledEvent.scheduledEndTimestamp, "F") : "Unknown"}`, true)
+        embed.addField('End Date and Time', `${guildScheduledEvent.scheduledEndAt ? time(guildScheduledEvent.scheduledEndAt, "F") : "Unknown"}`, true)
     }
     
     embed.addField('InviteURL', `${guildScheduledEvent.url}`)
