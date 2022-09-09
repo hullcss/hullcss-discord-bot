@@ -8,9 +8,12 @@ client.on('guildScheduledEventCreate', async guildScheduledEvent =>{
     .setTitle(guildScheduledEvent.name)
     .setDescription(guildScheduledEvent.description)
     .setColor('GREEN')
-    .setFooter({text: `Created by ${guildScheduledEvent.creator.tag}`})
-    .setTimestamp()
-    .setImage(`https://cdn.discordapp.com/guild-events/${guildScheduledEvent.id}/${guildScheduledEvent.image}.png?size=2048`)
+    if(interaction.user.tag !== null)
+	{
+        embed.setFooter({text: `Created by ${guildScheduledEvent.creator.tag}`})
+	}
+    embed.setTimestamp()
+    embed.setImage(`https://cdn.discordapp.com/guild-events/${guildScheduledEvent.id}/${guildScheduledEvent.image}.png?size=2048`)
 
     if(guildScheduledEvent.entityType !== 'EXTERNAL')
     {
