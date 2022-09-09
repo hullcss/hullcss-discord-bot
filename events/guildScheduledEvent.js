@@ -10,7 +10,7 @@ client.on('guildScheduledEventCreate', async guildScheduledEvent =>{
     .setColor('GREEN')
     .setFooter({text: `Created by ${guildScheduledEvent.creator.tag}`})
     .setTimestamp()
-    .setImage(`https://cdn.discordapp.com/guild-events/${guildScheduledEvent.id}/${guildScheduledEvent.image}.png`)
+    .setImage(`https://cdn.discordapp.com/guild-events/${guildScheduledEvent.id}/${guildScheduledEvent.image}.png?size=2048`)
 
     if(guildScheduledEvent.entityType !== 'EXTERNAL')
     {
