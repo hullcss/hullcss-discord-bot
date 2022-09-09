@@ -1,11 +1,11 @@
 FROM node:16.16.0
 
-RUN mkdir -p /usr/hullcss
-WORKDIR /usr/hullcss
+RUN mkdir -p /usr/hullcss/src
+WORKDIR /usr/hullcss/src
 
-COPY package.json /usr/hullcss
+COPY package.json /usr/hullcss/src
 RUN npm install
 
-COPY . /usr/hullcss
+COPY . /usr/hullcss/src
 
-CMD ["node", "index.js"]
+CMD ["node", "src/index.js"]
