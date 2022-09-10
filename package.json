@@ -4,14 +4,27 @@
     "description": "",
     "main": "src/index.js",
     "scripts": {
-        "start": "node src/index.js"
+        "start": "node src/index.js",
+        "lint": "eslint . --fix",
+        "spell": "cspell src/**/"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "@discordjs/builders": "^1.2.0",
+        "discord-api-types": "^0.37.8",
         "discord.js": "^13.10.2",
         "dotenv": "^16.0.1",
         "glob": "^7.2.3"
+    },
+    "devDependencies": {
+        "cspell": "^6.8.1",
+        "eslint": "^8.23.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.25.3",
+        "eslint-plugin-prettier": "^4.2.1",
+        "prettier": "^2.7.1"
     }
 }
