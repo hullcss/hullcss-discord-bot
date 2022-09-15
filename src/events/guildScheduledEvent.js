@@ -37,7 +37,7 @@ client.on('guildScheduledEventCreate', async (guildScheduledEvent) => {
 	if (guildScheduledEvent.scheduledEndAt !== null) {
 		embed.addField(
 			'End Date and Time',
-			`${guildScheduledEvent.scheduledStartAt.toLocaleString('en-UK', {
+			`${guildScheduledEvent.scheduledEndAt.toLocaleString('en-UK', {
 				timeZone: 'Europe/London',
 			})}`,
 			true
