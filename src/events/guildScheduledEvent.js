@@ -7,7 +7,7 @@ client.on('guildScheduledEventCreate', async (guildScheduledEvent) => {
 		.setTitle(guildScheduledEvent.name)
 		.setDescription(guildScheduledEvent.description)
 		.setColor('GREEN');
-	if (guildScheduledEvent.creator.tag) {
+	if (guildScheduledEvent.creator.tag !== null) {
 		embed.setFooter({ text: `Created by ${guildScheduledEvent.creator.tag}` });
 	}
 	embed.setTimestamp();
