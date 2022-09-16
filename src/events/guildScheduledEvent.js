@@ -7,9 +7,7 @@ client.on('guildScheduledEventCreate', async (guildScheduledEvent) => {
 		.setTitle(guildScheduledEvent.name)
 		.setDescription(guildScheduledEvent.description)
 		.setColor('GREEN');
-	if (guildScheduledEvent.creator.tag !== null) {
-		embed.setFooter({ text: `Created by ${guildScheduledEvent.creator.tag}` });
-	}
+
 	embed.setTimestamp();
 	embed.setImage(
 		`https://cdn.discordapp.com/guild-events/${guildScheduledEvent.id}/${guildScheduledEvent.image}.png?size=2048`
@@ -34,6 +32,7 @@ client.on('guildScheduledEventCreate', async (guildScheduledEvent) => {
 		})}`,
 		true
 	);
+
 	if (guildScheduledEvent.scheduledEndAt !== null) {
 		embed.addField(
 			'End Date and Time',
