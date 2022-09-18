@@ -13,14 +13,14 @@
     "license": "ISC",
     "dependencies": {
         "@discordjs/builders": "^1.2.0",
-        "discord-api-types": "^0.37.8",
+        "discord-api-types": "^0.37.10",
         "discord.js": "^13.10.2",
-        "dotenv": "^16.0.1",
+        "dotenv": "^16.0.2",
         "glob": "^7.2.3"
     },
     "devDependencies": {
         "cspell": "^6.9.1",
-        "eslint": "^8.23.0",
+        "eslint": "^8.23.1",
         "eslint-config-airbnb-base": "^15.0.0",
         "eslint-config-prettier": "^8.5.0",
         "eslint-plugin-import": "^2.25.3",
