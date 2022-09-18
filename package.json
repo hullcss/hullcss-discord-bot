@@ -19,7 +19,7 @@
         "glob": "^7.2.3"
     },
     "devDependencies": {
-        "cspell": "^6.8.1",
+        "cspell": "^6.9.1",
         "eslint": "^8.23.0",
         "eslint-config-airbnb-base": "^15.0.0",
         "eslint-config-prettier": "^8.5.0",
