@@ -3,7 +3,10 @@
         "ACWPing",
         "addemoji",
         "courserep",
+        "deletemessage",
+        "discordjs",
         "dockerhub",
+        "execchannel",
         "freeside",
         "gorb",
         "gorbcelebration",
@@ -22,6 +25,8 @@
         "Ouroboros",
         "paidmember",
         "robsoc",
+        "studentname",
+        "studentnumber",
         "usefullinks",
         "welcomechannel"
     ]

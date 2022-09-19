@@ -63,7 +63,7 @@ client.on("interactionCreate", async (interaction) => {
                         .setLabel("Student Name")
                         .setStyle("SHORT")
                         .setCustomId("studentname")
-                        .setPlaceholder(`Joe Bloggs`)
+                        .setPlaceholder(`Joe Blogs`)
                     const studentnumber = new discord.TextInputComponent()                        
                         .setLabel("Student Number")
                         .setStyle("SHORT")
@@ -238,7 +238,7 @@ client.on("interactionCreate", async (interaction) => {
                 interaction.member.roles.remove("891422669575184436") // Remove Prof
                 interaction.member.roles.remove("891422900182204487") // Remove Fellow
             }
-            else if(interaction.values.includes("bcsProff"))
+            else if(interaction.values.includes("bcsProf"))
             { 
                 interaction.member.roles.add("891422669575184436") // Add Prof
                 interaction.member.roles.remove("891422426133581895") // Remove Student
