@@ -1,7 +1,7 @@
 ---
-name: Bug Report
-description: Report a bug with the HullCSS Bot
-title: '[BUG REPORT] <Concise description of the bug>'
+name: Bug report
+about: Report a bug in this project
+title: '[BUG REPORT] <Name of the bug>'
 labels: ['bug']
 ---
 
