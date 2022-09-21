@@ -1,7 +1,9 @@
+---
 name: Feature request
 about: Request a feature in this project
 title: '[FEATURE REQUEST] <Name of the feature>'
 labels: ['enhancement']
+---
 
 ### Is your feature request related to a problem?
 _A clear and concise description of what the problem is, e.g. I'm always frustrated when [...]._
