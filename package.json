@@ -6,7 +6,9 @@
     "scripts": {
         "start": "node src/index.js",
         "lint": "eslint . --fix",
-        "spell": "cspell src/**/"
+        "spell-code": "cspell src/**/",
+        "spell": "cspell /**/"
+
     },
     "keywords": [],
     "author": "",
