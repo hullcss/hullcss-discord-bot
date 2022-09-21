@@ -1,4 +1,35 @@
 {
+    "language": "en",
+    "ignorePaths": [
+        "node_modules/**",
+        ".github/**",
+        ".firebase/**",
+        ".yarn/**",
+        "dist/**"
+    ],
+    "dictionaries": [
+        "typescript",
+        "cpp",
+        "npm",
+        "filetypes",
+        "cpp",
+        "en_GB",
+        "en_US",
+        "node",
+        "bash",
+        "fonts",
+        "npm",
+        "cryptocurrencies",
+        "companies",
+        "rust",
+        "html",
+        "css",
+        "entities",
+        "softwareTerms",
+        "misc",
+        "fullstack",
+        "softwareTerms"
+    ],
     "words": [
         "ACWPing",
         "addemoji",
