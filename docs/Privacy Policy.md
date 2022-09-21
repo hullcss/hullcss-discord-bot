@@ -8,4 +8,4 @@ Usage Data: May include information such as your browser type, browser version, 
 
 ## Contact Us
 
-If you have any questions about our Privacy Policy or want to delete your data from our servers, You can contact us via our [Official Discord Server](https://discord.gg/8kYtKWT2VA).
+If you have any questions about our Privacy Policy, You can contact us via our [Official Discord Server](https://discord.gg/8kYtKWT2VA).
