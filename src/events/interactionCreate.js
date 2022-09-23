@@ -229,7 +229,7 @@ client.on('interactionCreate', async (interaction) => {
 		}
 
 		if (interaction.customId == 'bcsSelect') {
-			if (interaction.values.includes('bscStudent')) {
+			if (interaction.values.includes('bcsStudent')) {
 				interaction.member.roles.add('891422426133581895'); // Add BCS Student
 				interaction.member.roles.remove('891422508555829288'); // Remove Associate
 				interaction.member.roles.remove('891422669575184436'); // Remove Prof
