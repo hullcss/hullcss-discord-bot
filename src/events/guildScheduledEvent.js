@@ -89,7 +89,7 @@ ${location}
 
 ## Invite
 
-${guildScheduledEvent.url}
+<a href="${guildScheduledEvent.url}">Invite Link</a>
 			`,
 		},
 		path: `src/markdownOutput`,
