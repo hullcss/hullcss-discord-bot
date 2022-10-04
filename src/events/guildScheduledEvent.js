@@ -6,7 +6,6 @@ const wait = require('node:timers/promises').setTimeout;
 client.on('guildScheduledEventCreate', async (guildScheduledEvent) => {
 	const eventsChannel = client.channels.cache.get('973686987787751534');
 	const markdownChannel = client.channels.cache.get('1025318437028896778');
-	console.log(guildScheduledEvent);
 	let location = '';
 	let endTime = 'No Scheduled End Time';
 
