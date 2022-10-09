@@ -1,5 +1,5 @@
-# Contributing guidelines for Clarence
-Thank you for contributing to the Clarence Bot repo, here are some guidelines to try follow when making changes. If you are unsure as to what to do after reading these please contact Kieran Robson on Discord @ Kieran#0891 in the [HullCSS Discord server](https://discord.gg/skEu7mutK6). Or contact the Webmaster found under the @Webmaster role
+# Contributing guidelines for the HullCSS Discord Bot
+Thank you for contributing to the HullCSS Discord Bot repo, here are some guidelines to try follow when making changes. If you are unsure as to what to do after reading these please contact Kieran Robson on Discord @ Kieran#0891 in the [HullCSS Discord server](https://discord.gg/skEu7mutK6). Or contact the Webmaster found under the @Webmaster role
 1. Each feature needs to have its own Pull Request (PR)
 2. Any large changes must be discussed in an Issue first
 3. If you have write permissions over the repo 
