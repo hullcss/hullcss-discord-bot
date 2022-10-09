@@ -6,7 +6,7 @@ Thank you for contributing to the Clarence Bot repo, here are some guidelines to
 	- make sure you have GitHub 2FA
 	- make a new branch for your commits before merging into main, or still please use PRs (unless you are the primary maintainer)
 	- If possible also gpg sign your commits
-4. Please see the Security Policy below for detais of what to do if you find any issues that are security related  
+4. Please see the [Security Policy](https://github.com/hullcss/CONTRIBUTING/blob/main/SECURITY.md) for detais of what to do if you find any issues that are security related  
 
 # How to contribute
 
@@ -49,8 +49,4 @@ Changes can be made in many different ways in many different ways
 Admins will look into your commit(s) and may suggest changes. If changes do need to be made, do not make a new pull request, instead just commit to your repo and the new changes will appear.
 
 If no changes need to be made, then your commits will be merged!
-
-# Security Policy
-
-If you notice a security vulnerability please do not open an issue or a pull request, instead please contact Kieran on Discord @ Kieran#0891 or the current HullCSS Webmaster under the @Webmaster role  
 
