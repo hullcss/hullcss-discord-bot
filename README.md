@@ -5,7 +5,7 @@
 
 ## HullCSS Discord Bot
 
-This bot is a multipurpose discord bot for The Hull Computer Science Society Discord server. 
+This bot is a multipurpose discord bot for The Hull Computer Science Society Discord server.
 
 <img src="https://img.shields.io/github/workflow/status/hullcss/hullcss-discord-bot/Publish%20Docker%20image?style=for-the-badge">
 <img src="https://img.shields.io/badge/Discord.JS-13.10.2-blue?style=for-the-badge&logo=DISCORD" />
@@ -29,10 +29,10 @@ Alongside commands, this bot also features:
 * Rule agreement button embed with `#code-of-conduct`
 
 ---
-## Installation 
-**This is a private bot used for a specific purpose within a specific discord server however if you do want to run the bot for testing purposes or deploy it to a new location. Follow the instructions below.** 
+## Installation
+**This is a private bot used for a specific purpose within a specific discord server however if you do want to run the bot for testing purposes or deploy it to a new location. Follow the instructions below.**
 
-### 🐋 Docker 
+### 🐋 Docker
 Due to the [Publish.yml](.github/workflows/publish.yml) workflow, the newest build will automatically be pushed to dockerhub.
 
 ```docker
@@ -48,7 +48,7 @@ kieranr27/hullcss:main
 Using a tool like [Ouroboros](https://github.com/pyouroboros/ouroboros), you can automatically update containers without the need for restarts.
 
 ### 👷 Manual
-- Clone the repo 
+- Clone the repo
 - Remove the `.template` from `.env.template`
 - Replace `INSERT DISCORD TOKEN` with your Discord token.
 - Run `npm i` to install packages
@@ -56,5 +56,9 @@ Using a tool like [Ouroboros](https://github.com/pyouroboros/ouroboros), you can
 
 ---
 ## Contributions
-While this bot is maintained by [Kieran](https://github.com/KieranRobson), contributors are welcome! 
+While this bot is maintained by [Kieran](https://github.com/KieranRobson), contributors are welcome!
 - Contribution guidelines are coming soon.
+
+## License
+
+hullcss-discord-bot is licensed under the MIT License. The full license text is included in the [LICENSE](LICENSE) file in this repository. Tldr legal have a [great summary](https://www.tldrlegal.com/l/mit) of the license if you're interested.
