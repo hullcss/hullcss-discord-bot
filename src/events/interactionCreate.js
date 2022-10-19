@@ -50,7 +50,7 @@ client.on('interactionCreate', async (interaction) => {
 		}
 
 		if (interaction.customId == 'paidModal') {
-			if (interaction.member.roles.cache.has(`427878753008353292`)) {
+			if (interaction.member.roles.cache.has(`1003727320147820634`)) {
 				await interaction.deferReply({ ephemeral: true });
 				interaction.followUp({
 					content: 'You already have the paid member role.',
@@ -305,7 +305,7 @@ client.on('interactionCreate', async (interaction) => {
 			execchannel.send({ embeds: [embed], components: [row] });
 			await interaction.deferReply({ ephemeral: true });
 			interaction.followUp({
-				content: 'Your request has been sent to execs!',
+				content: 'Your request has been sent to execs! Please be patient as execs, like you, are also students!',
 				ephemeral: true,
 			});
 		}
