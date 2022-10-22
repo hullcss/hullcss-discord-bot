@@ -257,10 +257,10 @@ client.on('interactionCreate', async (interaction) => {
 		}
 
 		if (interaction.customId == 'miscSelect') {
-			if (interaction.values.includes('courserep')) {
-				interaction.member.roles.add('493738161713709077');
+			if (interaction.values.includes('events')) {
+				interaction.member.roles.add('1033061119625023559');
 			} else {
-				interaction.member.roles.remove('493738161713709077');
+				interaction.member.roles.remove('1033061119625023559');
 			}
 
 			if (interaction.values.includes('ACWPing')) {

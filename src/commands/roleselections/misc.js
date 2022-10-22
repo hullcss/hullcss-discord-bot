@@ -18,9 +18,9 @@ module.exports = {
 				.setMaxValues(2)
 				.addOptions([
 					{
-						label: 'Course Rep',
-						description: 'Get access to the course rep channel',
-						value: 'courserep',
+						label: 'Events Ping',
+						description: 'Get notified of events!',
+						value: 'events',
 					},
 					{
 						label: 'CourseWork Help Ping',
