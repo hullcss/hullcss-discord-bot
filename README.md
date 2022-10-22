@@ -45,7 +45,7 @@ docker run -d \
 kieranr27/hullcss:main
 ```
 
-Using a tool like [Ouroboros](https://github.com/pyouroboros/ouroboros), you can automatically update containers without the need for restarts.
+Using a tool like [Ouroboros](https://github.com/gmt2001/ouroboros), you can automatically update containers without the need for restarts.
 
 ### 👷 Manual
 - Clone the repo
