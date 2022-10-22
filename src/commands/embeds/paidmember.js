@@ -42,7 +42,11 @@ module.exports = {
 				'This is a manual process, executive members need to verify that you have paid your membership and then manually give you the role. **There is no notification of you receiving the role!**'
 			)
 			.addField('Pay for a membership', 'Press the grey button below!')
-			.setThumbnail('https://i.imgur.com/ww6wKwJ.png');
+			.setThumbnail('https://i.imgur.com/ww6wKwJ.png')
+			.setImage(
+				`https://i.imgur.com/ro0U7LG.png?2048`
+			);
+
 
 		const row = new MessageActionRow()
 			.addComponents(
