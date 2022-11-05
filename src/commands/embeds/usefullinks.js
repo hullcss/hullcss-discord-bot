@@ -25,7 +25,7 @@ module.exports = {
 				`
             - GitHub Student Developer Pack: https://education.github.com/pack\r\n
             - Microsoft Azure Dev Tools for Teaching: https://azure.microsoft.com/en-gb/free/students/\r\n
-            - Jetbrains IDE Package: https://www.jetbrains.com/community/education/#students\r\n`
+            - JetBrains IDE Package: https://www.jetbrains.com/community/education/#students\r\n`
 			)
 
 			.addField(

@@ -33,7 +33,7 @@ Alongside commands, this bot also features:
 **This is a private bot used for a specific purpose within a specific discord server however if you do want to run the bot for testing purposes or deploy it to a new location. Follow the instructions below.**
 
 ### 🐋 Docker
-Due to the [Publish.yml](.github/workflows/publish.yml) workflow, the newest build will automatically be pushed to dockerhub.
+Due to the [Publish.yml](.github/workflows/publish.yml) workflow, the newest build will automatically be pushed to DockerHub.
 
 ```docker
 docker run -d \
