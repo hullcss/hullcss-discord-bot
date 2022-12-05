@@ -1,9 +1,9 @@
 {
-    "name": "hullcss",
-    "version": "1.0.0",
-    "description": "",
-    "main": "src/index.js",
-    "scripts": {
+	"name": "hullcss",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/index.js",
+	"scripts": {
 		"spell": "cspell /**/",
 		"spell:code": "cspell src/**/",
 		"lint": "npx eslint src",
@@ -14,25 +14,25 @@
 		"prettier:code:fix": "yarn run prettier -- --write",
 		"prettier:all:fix": "prettier . --write",
 		"format": "yarn run prettier:all:fix && yarn run lint:fix"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "@discordjs/builders": "^1.4.0",
-        "discord-api-types": "^0.37.20",
-        "discord.js": "^13.12.0",
-        "dotenv": "^16.0.3",
-        "glob": "^7.2.3",
-        "json-to-frontmatter-markdown": "^1.0.0"
-    },
-    "devDependencies": {
-        "alex": "^11.0.0",
-        "cspell": "^6.16.0",
-        "eslint": "^8.29.0",
-        "eslint-config-prettier": "^8.5.0",
-        "eslint-plugin-import": "^2.26.0",
-        "eslint-plugin-prettier": "^4.2.1",
-        "prettier": "^2.8.0"
-    }
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@discordjs/builders": "^1.4.0",
+		"discord-api-types": "^0.37.20",
+		"discord.js": "^13.12.0",
+		"dotenv": "^16.0.3",
+		"glob": "^7.2.3",
+		"json-to-frontmatter-markdown": "^1.0.0"
+	},
+	"devDependencies": {
+		"alex": "^11.0.0",
+		"cspell": "^6.16.0",
+		"eslint": "^8.29.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"prettier": "^2.8.0"
+	}
 }
