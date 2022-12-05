@@ -66,7 +66,9 @@ client.on('guildScheduledEventCreate', async (guildScheduledEvent) => {
 				{ tags: 'event' },
 				{ title: guildScheduledEvent.name },
 				{
-					date: guildScheduledEvent.scheduledStartAt.toISOString().substring(0,10)
+					date: guildScheduledEvent.scheduledStartAt
+						.toISOString()
+						.substring(0, 10),
 				},
 				{ teaser: guildScheduledEvent.description },
 			],

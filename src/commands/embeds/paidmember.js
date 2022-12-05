@@ -43,10 +43,7 @@ module.exports = {
 			)
 			.addField('Pay for a membership', 'Press the grey button below!')
 			.setThumbnail('https://i.imgur.com/ww6wKwJ.png')
-			.setImage(
-				`https://i.imgur.com/ro0U7LG.png?2048`
-			);
-
+			.setImage(`https://i.imgur.com/ro0U7LG.png?2048`);
 
 		const row = new MessageActionRow()
 			.addComponents(
