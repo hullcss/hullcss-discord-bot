@@ -7,6 +7,9 @@ name: Publish Docker image
 
 on:
   push:
+    branches:
+      - main
+
 
 jobs:
   push_to_registries:
