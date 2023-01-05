@@ -69,4 +69,4 @@ While this bot is maintained by [Kieran](https://github.com/KieranRobson), contr
 
 ## License
 
-hullcss-discord-bot is licensed under the MIT License. The full license text is included in the [LICENSE](LICENSE) file in this repository. Tldr legal have a [great summary](https://www.tldrlegal.com/l/mit) of the license if you're interested.
+hullcss-discord-bot is licensed under the MIT License. The full license text is included in the [LICENSE](LICENSE) file in this repository. TLDR legal have a [great summary](https://www.tldrlegal.com/l/mit) of the license if you're interested.
