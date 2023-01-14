@@ -1,4 +1,4 @@
-name: Update dependencies
+name: Update Dependencies
 
 on:
   workflow_dispatch:
@@ -25,6 +25,10 @@ jobs:
       - name: Install
         run: |
           yarn
+
+      - name: Fix lint
+        run: |
+          yarn run format
 
       # Open a pull request if there are any changes
       - name: Create Pull Request
