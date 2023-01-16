@@ -125,9 +125,9 @@
   integrity sha512-1JMofhLK+4p4KairF75D3A924m5ERMgd1GvzhwK2geuYgd2ZKuGW72gvXpIV7aGf52E3Uu1kDXxxGAiZ5uVG7g==
 
 "@cspell/dict-css@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@cspell/dict-css/-/dict-css-4.0.1.tgz#f5abd92a7f961be0d893d0a89f99e86ff91ed709"
-  integrity sha512-jxsncdeiN/wkZGqU8iLtn24n3e0Fwugj6T48rjWUItn/i3C9j2W7RXOVqd7ZIeWeV8ibyq0WWiwA8Ajg6XaKpA==
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@cspell/dict-css/-/dict-css-4.0.2.tgz#0691622a931a8f3e18d94f006669ba12619f0f62"
+  integrity sha512-0NxBcB36b1Jy23Tf5YLrD8+PvBhE3FgBci3rwtw2DEqVigEX6uodecfoh9I4kcU8PZlVsDujrUfwgzYCWh/feQ==
 
 "@cspell/dict-dart@^2.0.1":
   version "2.0.1"
