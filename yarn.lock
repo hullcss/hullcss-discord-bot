@@ -2932,9 +2932,9 @@ micromark-extension-gfm@^2.0.0:
     micromark-util-types "^1.0.0"
 
 micromark-extension-mdx-expression@^1.0.0:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/micromark-extension-mdx-expression/-/micromark-extension-mdx-expression-1.0.3.tgz#cd3843573921bf55afcfff4ae0cd2e857a16dcfa"
-  integrity sha512-TjYtjEMszWze51NJCZmhv7MEBcgYRgb3tJeMAJ+HQCAaZHHRBaDCccqQzGizR/H4ODefP44wRTgOn2vE5I6nZA==
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/micromark-extension-mdx-expression/-/micromark-extension-mdx-expression-1.0.4.tgz#33fe2c6ee214738255de175a084281c11894ddda"
+  integrity sha512-TCgLxqW6ReQ3AJgtj1P0P+8ZThBTloLbeb7jNaqr6mCOLDpxUiBFE/9STgooMZttEwOQu5iEcCCa3ZSDhY9FGw==
   dependencies:
     micromark-factory-mdx-expression "^1.0.0"
     micromark-factory-space "^1.0.0"
@@ -3014,9 +3014,9 @@ micromark-factory-label@^1.0.0:
     uvu "^0.5.0"
 
 micromark-factory-mdx-expression@^1.0.0:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/micromark-factory-mdx-expression/-/micromark-factory-mdx-expression-1.0.6.tgz#917e17d16e6e9c2551f3a862e6a9ebdd22056476"
-  integrity sha512-WRQIc78FV7KrCfjsEf/sETopbYjElh3xAmNpLkd1ODPqxEngP42eVRGbiPEQWpRV27LzqW+XVTvQAMIIRLPnNA==
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/micromark-factory-mdx-expression/-/micromark-factory-mdx-expression-1.0.7.tgz#e38298dc1f7eaf6ba1d9f210531ceae17155c00f"
+  integrity sha512-QAdFbkQagTZ/eKb8zDGqmjvgevgJH3+aQpvvKrXWxNJp3o8/l2cAbbrBd0E04r0Gx6nssPpqWIjnbHFvZu5qsQ==
   dependencies:
     micromark-factory-space "^1.0.0"
     micromark-util-character "^1.0.0"
@@ -3111,9 +3111,9 @@ micromark-util-encode@^1.0.0:
   integrity sha512-U2s5YdnAYexjKDel31SVMPbfi+eF8y1U4pfiRW/Y8EFVCy/vgxk/2wWTxzcqE71LHtCuCzlBDRU2a5CQ5j+mQA==
 
 micromark-util-events-to-acorn@^1.0.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/micromark-util-events-to-acorn/-/micromark-util-events-to-acorn-1.2.0.tgz#65785cb77299d791bfefdc6a5213ab57ceead115"
-  integrity sha512-WWp3bf7xT9MppNuw3yPjpnOxa8cj5ACivEzXJKu0WwnjBYfzaBvIAT9KfeyI0Qkll+bfQtfftSwdgTH6QhTOKw==
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/micromark-util-events-to-acorn/-/micromark-util-events-to-acorn-1.2.1.tgz#d5b9dfbc589ece7917de24de0a57b909c0d36583"
+  integrity sha512-mkg3BaWlw6ZTkQORrKVBW4o9ICXPxLtGz51vml5mQpKFdo9vqIX68CAx5JhTOdjQyAHH7JFmm4rh8toSPQZUmg==
   dependencies:
     "@types/acorn" "^4.0.0"
     "@types/estree" "^1.0.0"
