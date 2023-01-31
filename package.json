@@ -20,7 +20,7 @@
 	"license": "ISC",
 	"dependencies": {
 		"@discordjs/builders": "^1.4.0",
-		"discord-api-types": "^0.37.30",
+		"discord-api-types": "^0.37.31",
 		"discord.js": "^13.12.0",
 		"dotenv": "^16.0.3",
 		"glob": "^7.2.3",
@@ -29,7 +29,7 @@
 	"devDependencies": {
 		"alex": "^11.0.0",
 		"cspell": "^6.19.2",
-		"eslint": "^8.32.0",
+		"eslint": "^8.33.0",
 		"eslint-config-prettier": "^8.6.0",
 		"eslint-plugin-import": "^2.27.5",
 		"eslint-plugin-prettier": "^4.2.1",
