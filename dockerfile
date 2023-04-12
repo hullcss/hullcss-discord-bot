@@ -1,4 +1,4 @@
-FROM node:19.8.1
+FROM node:19.9.0
 RUN mkdir -p /usr/hullcss/src
 WORKDIR /usr/hullcss/src
 COPY package.json /usr/hullcss/src
