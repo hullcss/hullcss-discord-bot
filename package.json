@@ -19,20 +19,20 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"@discordjs/builders": "^1.5.0",
-		"discord-api-types": "^0.37.35",
-		"discord.js": "^13.14.0",
+		"@discordjs/builders": "^1.6.3",
+		"discord-api-types": "^0.37.42",
+		"discord.js": "^13.16.0",
 		"dotenv": "^16.0.3",
 		"glob": "^7.2.3",
 		"json-to-frontmatter-markdown": "^1.0.0"
 	},
 	"devDependencies": {
 		"alex": "^11.0.0",
-		"cspell": "^6.29.0",
-		"eslint": "^8.36.0",
-		"eslint-config-prettier": "^8.7.0",
+		"cspell": "^6.31.1",
+		"eslint": "^8.41.0",
+		"eslint-config-prettier": "^8.8.0",
 		"eslint-plugin-import": "^2.27.5",
 		"eslint-plugin-prettier": "^4.2.1",
-		"prettier": "^2.8.4"
+		"prettier": "^2.8.8"
 	}
 }
