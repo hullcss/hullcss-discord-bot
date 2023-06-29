@@ -21,7 +21,7 @@ module.exports = {
 			.setThumbnail('https://i.imgur.com/ww6wKwJ.png')
 			.addField(
 				'Exec Members',
-				`President - <@261607869068214272>.\r\nSecretary - <@265925073926488064>.\r\nTreasurer - <@354324259629170700>.\r\nSocial Secretary - NA.\r\n Publicity Officer - <@328928794364870656>.\r\nWebmaster - <@449573875743981569>.\r\n\r\n\r\n`
+				`President - <@867382918883180554>.\r\nSecretary - <@257938317243449346>.\r\nTreasurer - <@465912244404879361>.\r\nSocial Secretary - <@772513928160084009>.\r\nWebmaster - <@609463800818827264>.\r\n\r\n\r\n`
 			)
 			.addField('Our Site', `https://hullcss.org/`)
 			.addField(
