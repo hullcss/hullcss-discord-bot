@@ -19,8 +19,8 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"@discordjs/builders": "^1.6.3",
-		"discord-api-types": "^0.37.50",
+		"@discordjs/builders": "^1.6.4",
+		"discord-api-types": "^0.37.51",
 		"discord.js": "^13.16.0",
 		"dotenv": "^16.3.1",
 		"glob": "^7.2.3",
@@ -30,7 +30,7 @@
 		"alex": "^11.0.0",
 		"cspell": "^6.31.2",
 		"eslint": "^8.46.0",
-		"eslint-config-prettier": "^8.9.0",
+		"eslint-config-prettier": "^8.10.0",
 		"eslint-plugin-import": "^2.28.0",
 		"eslint-plugin-prettier": "^4.2.1",
 		"prettier": "^2.8.8"
