@@ -1,9 +1,9 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder, ApplicationCommandType } = require('discord.js');
 
 module.exports = {
 	name: 'links',
 	description: 'returns links of HullCSS',
-	type: 'CHAT_INPUT',
+	type: ApplicationCommandType.ChatInput,
 	/**
 	 *
 	 * @param {Client} client
@@ -11,11 +11,11 @@ module.exports = {
 	 * @param {String[]} args
 	 */
 	run: async (client, interaction) => {
-		const embed = new MessageEmbed()
+		const embed = new EmbedBuilder()
 			.setTitle('Links!')
-			.setColor('GREEN')
+			.setColor(0x3FB618)
 			.setFooter({ text: `Called By: ${interaction.user.tag}` })
-			.addField('Find us here:', 'https://hullcss.org');
+			.addFields({name: 'Find us here:', value: 'https://hullcss.org'});
 		interaction.reply({ embeds: [embed] });
 	},
 };

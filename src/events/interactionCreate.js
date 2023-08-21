@@ -25,7 +25,7 @@ client.on('interactionCreate', async (interaction) => {
 	}
 
 	// Context Menu Handling
-	if (interaction.isContextMenu()) {
+	if (interaction.isUserContextMenuCommand()) {
 		await interaction.deferReply({ ephemeral: false });
 		const command = client.slashCommands.get(interaction.commandName);
 		if (command) command.run(client, interaction);
@@ -98,7 +98,7 @@ client.on('interactionCreate', async (interaction) => {
 	}
 
 	// Select Menu Handling
-	if (interaction.isSelectMenu()) {
+	if (interaction.isStringSelectMenu()) {
 		if (interaction.customId == 'yearSelect') {
 			if (interaction.values.includes('0')) {
 				interaction.member.roles.add('974754114296741948'); // Add Foundation

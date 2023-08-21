@@ -1,9 +1,9 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder, ApplicationCommandType } = require('discord.js');
 
 module.exports = {
 	name: 'robsoc',
 	description: 'returns robotics society discord link',
-	type: 'CHAT_INPUT',
+	type: ApplicationCommandType.ChatInput,
 	/**
 	 *
 	 * @param {Client} client
@@ -11,17 +11,17 @@ module.exports = {
 	 * @param {String[]} args
 	 */
 	run: async (client, interaction) => {
-		const embed = new MessageEmbed()
+		const embed = new EmbedBuilder()
 			.setTitle('Robotics Society')
-			.setColor('BLUE')
+			.setColor(0x44468b)
 			.setFooter({ text: `Called By: ${interaction.user.tag}` })
 			.setDescription(
 				'Robotics Society are a society where you can gain skills in building an actual robot, or get help with your assignments or exams, but they also run social nights where they go out to do stuff.'
 			)
-			.addField(
-				'You can join them from below!',
-				'https://discord.gg/cMP5CavnK4'
-			);
+			.addFields({
+				name: 'You can join them from below!',
+				value: 'https://discord.gg/cMP5CavnK4'
+			});
 		interaction.reply({ embeds: [embed] });
 	},
 };

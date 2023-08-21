@@ -1,16 +1,9 @@
 const client = require('../index');
+const { ActivityType } = require('discord.js')
 
 client.on('ready', () => {
 	console.log('HullCSS is online');
-
-	const Activities = ['Hullcss.org', 'Slash Commands'];
-
-	setInterval(() => {
-		client.user.setActivity(
-			Activities[Math.floor(Math.random() * Activities.length)],
-			{ type: 'WATCHING' }
-		);
-	}, 180000);
+	client.user.setActivity('HullCSS.org', { type: ActivityType.Custom })
 
 	setInterval(() => {
 		const { memberCount } = client.guilds.cache.get('427865794467069962');

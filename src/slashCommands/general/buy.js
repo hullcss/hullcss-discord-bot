@@ -1,9 +1,9 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder, ApplicationCommandType } = require('discord.js');
 
 module.exports = {
 	name: 'buy',
 	description: 'returns membership purchase link',
-	type: 'CHAT_INPUT',
+	type: ApplicationCommandType.ChatInput,
 	/**
 	 *
 	 * @param {Client} client
@@ -11,13 +11,12 @@ module.exports = {
 	 * @param {String[]} args
 	 */
 	run: async (client, interaction) => {
-		const embed = new MessageEmbed()
+		const embed = new EmbedBuilder()
 			.setTitle('Thanks for considering to become a paid member!')
-			.setColor('GREEN')
+			.setColor(0x3FB618)
 			.setFooter({ text: `Called By: ${interaction.user.tag}` })
-			.addField(
-				'You can purchase from below!',
-				'https://hulluniunion.com/shop?aid=304'
+			.addFields(
+				{name: 'You can purchase from below!', value: 'https://hulluniunion.com/shop?aid=304'}
 			);
 		interaction.reply({ embeds: [embed] });
 	},

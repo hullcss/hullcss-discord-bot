@@ -35,7 +35,7 @@ module.exports = {
 			)
 			.addField(
 				'Benefits?',
-				'Come to every event\r\n Vote in AGMs and EGMs\r\n Access a special area, just for paid members\r\n Access our archive of previous events and guest talks\r\n\r\nAnd support the society you are apart of!'
+				'Come to every event\r\n Vote in AGMs and EGMs\r\n Access a special area, just for paid members\r\n Access our archive of previous events and guest talks\r\nAnd support the society you are apart of!'
 			)
 			.addField(
 				'Disclaimer!',

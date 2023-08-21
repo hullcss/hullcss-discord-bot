@@ -1,9 +1,9 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder, ApplicationCommandType } = require('discord.js');
 
 module.exports = {
 	name: 'ping',
-	description: 'returns ping of the HullCSS bot',
-	type: 'CHAT_INPUT',
+	description: 'returns ping of the bot',
+	type: ApplicationCommandType.ChatInput,
 	/**
 	 *
 	 * @param {Client} client
@@ -16,16 +16,14 @@ module.exports = {
 		const minutes = Math.floor(client.uptime / 60000) % 60;
 		const seconds = Math.floor(client.uptime / 1000) % 60;
 
-		const embed = new MessageEmbed()
-			.setColor('GREEN')
+		const embed = new EmbedBuilder()
+			.setColor(0x3FB618)
 			.setFooter({ text: `Called By: ${interaction.user.tag}` })
 			.setTimestamp()
 			.setTitle('Pong!')
 			.setDescription(`${client.ws.ping} ping to host`)
-			.addField(
-				'Uptime',
-				` ${days}days ${hours}hrs ${minutes}min ${seconds}sec`,
-				true
+			.addFields(
+				{ name: 'Uptime', value: `${days}days ${hours}hrs ${minutes}min ${seconds}sec`, inline: true }
 			);
 		interaction.reply({ embeds: [embed] });
 	},

@@ -1,7 +1,9 @@
+const { ApplicationCommandType } = require('discord.js');
+
 module.exports = {
 	name: 'lampadaferens',
 	description: 'Hull University',
-	type: 'CHAT_INPUT',
+	type: ApplicationCommandType.ChatInput,
 	/**
 	 *
 	 * @param {Client} client

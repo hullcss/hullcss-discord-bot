@@ -1,6 +1,4 @@
-const { Permissions } = require('discord.js');
-const { SlashCommandBuilder } = require('@discordjs/builders');
-const { PermissionFlagsBits } = require('discord-api-types/v10');
+const { SlashCommandBuilder, PermissionFlagsBits } = require('discord.js');
 
 module.exports = {
 	...new SlashCommandBuilder()
@@ -18,18 +16,7 @@ module.exports = {
 	 */
 
 	run: async (client, interaction) => {
-		const permission = interaction.member.permissions.has(
-			Permissions.FLAGS.MANAGE_CHANNELS
-		);
-		if (!permission)
-			return interaction.reply({
-				contents: "You don't have permission to use this command",
-				ephemeral: true,
-			});
-		interaction.channel.permissionOverwrites.edit(
-			interaction.guild.roles.everyone.id,
-			{ SEND_MESSAGES: false }
-		);
+		interaction.channel.permissionOverwrites.edit(interaction.guild.everyone, { SendMessages: false });
 		interaction.reply('Channel has been locked.');
 	},
 };
