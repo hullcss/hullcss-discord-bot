@@ -1,5 +1,30 @@
 # Changelog
 
+## [4.0.0](https://github.com/hullcss/hullcss-discord-bot/compare/v3.0.0...v4.0.0) (2023-08-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* Partial V14 rewrite
+
+### Features
+
+* Convert role dropdowns into slash command ([76c6634](https://github.com/hullcss/hullcss-discord-bot/commit/76c6634c9156b207e288a8105fc753dae1ded987))
+* Partial V14 rewrite ([eba31b9](https://github.com/hullcss/hullcss-discord-bot/commit/eba31b9d2d74b5a74c0abbaf92fc0fd79ae25ccf))
+* Transition paidmember over to embed ([6ec81c3](https://github.com/hullcss/hullcss-discord-bot/commit/6ec81c3d07e7df758d8c9b40c308af123ebc4390))
+* Transition useful links to slash command ([730ad22](https://github.com/hullcss/hullcss-discord-bot/commit/730ad225e9b50d2e173d8037f8619a27d8f83f0b))
+* Transition welcome embed to slash command ([4aa8490](https://github.com/hullcss/hullcss-discord-bot/commit/4aa84902682d4b1fef44f3a83b3cc7c6751c1e00))
+* Update welcome with current members ([9a9fcbb](https://github.com/hullcss/hullcss-discord-bot/commit/9a9fcbbbf1d2a960b7900c4081cbcd0f257f90ad))
+
+
+### Bug Fixes
+
+* Add Changelog to spell ignore ([548cf39](https://github.com/hullcss/hullcss-discord-bot/commit/548cf3969730201264c837c63589088cc3b19b37))
+* Fix 8ball command ([1ffb82e](https://github.com/hullcss/hullcss-discord-bot/commit/1ffb82ee1338c281437ecc8216fa4d0d1e5b2fbe))
+* Fix gorb file path ([9242e1a](https://github.com/hullcss/hullcss-discord-bot/commit/9242e1a0a871fe3893477fe5c4cab6c8c3173b69))
+* Run lint again ([60bf5a5](https://github.com/hullcss/hullcss-discord-bot/commit/60bf5a5e1548b8020b5072abe487b2f2a44c60de))
+* Workflow failures ([36b18b0](https://github.com/hullcss/hullcss-discord-bot/commit/36b18b06a8bbc22a4eff48756fd92337cdf9ecba))
+
 ## [3.0.0](https://github.com/hullcss/hullcss-discord-bot/compare/v2.0.0...v3.0.0) (2022-12-13)
 
 ### ⚠ BREAKING CHANGES
