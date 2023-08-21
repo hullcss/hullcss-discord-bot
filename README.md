@@ -6,8 +6,8 @@
 
 This bot is a multipurpose discord bot for The Hull Computer Science Society Discord server.
 
-<img src="https://img.shields.io/github/workflow/status/hullcss/hullcss-discord-bot/Publish%20Docker%20image?style=for-the-badge">
-<img src="https://img.shields.io/badge/Discord.JS-13.10.2-blue?style=for-the-badge&logo=DISCORD" />
+<img src="https://img.shields.io/github/actions/status/hullcss/hullcss-discord-bot/lint.yml?style=for-the-badge">
+<img src="https://img.shields.io/badge/DiscordJS-V14-blue?style=for-the-badge&logo=DISCORD" />
 <img src="https://img.shields.io/badge/Node%20Version-16.16.0-brightgreen?style=for-the-badge&logo=Node.js">
 <img src="https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge">
 </div align="center">
