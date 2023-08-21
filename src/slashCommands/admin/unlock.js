@@ -1,7 +1,6 @@
 const {
 	SlashCommandBuilder,
 	PermissionFlagsBits,
-	ThreadAutoArchiveDuration,
 } = require('discord.js');
 
 module.exports = {

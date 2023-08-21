@@ -1,5 +1,4 @@
 const {
-	Permissions,
 	SlashCommandBuilder,
 	PermissionFlagsBits,
 } = require('discord.js');
