@@ -1,4 +1,4 @@
-const { MessageEmbed } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { SlashCommandBuilder } = require('@discordjs/builders');
 
 module.exports = {
@@ -24,15 +24,15 @@ module.exports = {
 
 		const Responses = ['Yes', 'No', 'Maybe', 'It is likely', 'It is unlikely'];
 
-		const embed = new MessageEmbed()
-			.setColor('GREEN')
+		const embed = new EmbedBuilder()
+			.setColor(0x3fb618)
 			.setFooter({ text: `Called By: ${interaction.user.tag}` })
 			.setTimestamp()
 			.setTitle('8ball')
-			.addField(
-				`${questionToSend}`,
-				`${Responses[Math.floor(Math.random() * Responses.length)]}`
-			);
+			.addFields({
+				name: `${questionToSend}`,
+				value: `${Responses[Math.floor(Math.random() * Responses.length)]}`,
+			});
 		interaction.reply({ embeds: [embed] });
 	},
 };
