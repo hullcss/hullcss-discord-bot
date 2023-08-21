@@ -119,9 +119,9 @@
   integrity sha512-8czAa/Mh96wu2xr0RXQEGMTBUGkTvYn/Pb0o+gqOO1YW+poXGQc3gx0YPqILDryP/KCERrNvkWUJz3iGbvwC2A==
 
 "@cspell/dict-companies@^3.0.9":
-  version "3.0.19"
-  resolved "https://registry.yarnpkg.com/@cspell/dict-companies/-/dict-companies-3.0.19.tgz#ac7ecaf7fe6568a93ca983a4f72bb64328864b2e"
-  integrity sha512-hO7rS4DhFA333qyvf89wIVoclCtXe/2sftY6aS0oMIH1bMZLjLx2B2sQJj6dCiu6gG/By1S9YZ0fXabiPk2Tkg==
+  version "3.0.20"
+  resolved "https://registry.yarnpkg.com/@cspell/dict-companies/-/dict-companies-3.0.20.tgz#32e6d6a9e262ec24d41a0b4ec50e1456589ed194"
+  integrity sha512-o13HaqYxkWo20FC5iU9PHKMFexY9D7/XeSj9tvBzy3sEzW324zw5MWEkeDszwmC/GsLZtot+5vopCv6/evRNlA==
 
 "@cspell/dict-cpp@^5.0.2":
   version "5.0.4"
@@ -149,9 +149,9 @@
   integrity sha512-cLkwo1KT5CJY5N5RJVHks2genFkNCl/WLfj+0fFjqNR+tk3tBI1LY7ldr9piCtSFSm4x9pO1x6IV3kRUY1lLiw==
 
 "@cspell/dict-data-science@^1.0.0":
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/@cspell/dict-data-science/-/dict-data-science-1.0.10.tgz#88beefd1937fd8c7d94bb3d60f0e9c1b3c428ad8"
-  integrity sha512-7ZsRCnW0f4Bdo6Cqq8V4gHr8K58h+MP8majcDeMNhpMFUPiiSnvKsDuG9V5jciI/0t+lptPrZwGGIVEDF4Kqtg==
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/@cspell/dict-data-science/-/dict-data-science-1.0.11.tgz#4eabba75c21d27253c1114b4fbbade0ead739ffc"
+  integrity sha512-TaHAZRVe0Zlcc3C23StZqqbzC0NrodRwoSAc8dis+5qLeLLnOCtagYQeROQvDlcDg3X/VVEO9Whh4W/z4PAmYQ==
 
 "@cspell/dict-django@^4.0.2":
   version "4.1.0"
@@ -269,9 +269,9 @@
   integrity sha512-KuqH8tEsFD6DPKqKwIfWr9E+admE3yghaC0AKXG8jPaf77N0lkctKaS3dm0oxWUXkYKA/eXj6LCtz3VcTyxFPg==
 
 "@cspell/dict-php@^4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@cspell/dict-php/-/dict-php-4.0.1.tgz#f3c5cd241f43a32b09355370fc6ce7bd50e6402c"
-  integrity sha512-XaQ/JkSyq2c07MfRG54DjLi2CV+HHwS99DDCAao9Fq2JfkWroTQsUeek7wYZXJATrJVOULoV3HKih12x905AtQ==
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@cspell/dict-php/-/dict-php-4.0.2.tgz#780ada304f0e92b9a78571c0e32f7513d604675c"
+  integrity sha512-7yglcmMoFHDPQXHW+9QAl8YjAToMm1qOi+4x/yGY1FSIEjZbCpjeDgyKMGg/NgpooQQceEN38AR59Pn23EDriA==
 
 "@cspell/dict-powershell@^5.0.1":
   version "5.0.2"
@@ -284,9 +284,9 @@
   integrity sha512-JSLEdpEYufQ1H+93UHi+axlqQm1fhgK6kpdLHp6uPHu//CsvETcqNVawjB+qOdI/g38JTMw5fBqSd0aGNxa6Dw==
 
 "@cspell/dict-python@^4.0.2":
-  version "4.1.5"
-  resolved "https://registry.yarnpkg.com/@cspell/dict-python/-/dict-python-4.1.5.tgz#0c5eab3f12a166c9339dec508d8b07b4dddab1d4"
-  integrity sha512-wWUWyHdyJtx5iG6Fz9rBQ17BtdpEsB17vmutao+gixQD28Jzb6XoLgDQ6606M0RnFjBSFhs5iT4CJBzlD2Kq6g==
+  version "4.1.6"
+  resolved "https://registry.yarnpkg.com/@cspell/dict-python/-/dict-python-4.1.6.tgz#06082d76ad5822107eaf7d5d3f6152e9d4a59071"
+  integrity sha512-QcAWSiWMlscFNYyLoag/hUS1oE4FcRIXuM3rXc0JzAhTvsLvl4D8862eyBCm6pQJAkx1HamFg/ftOkTAXlyaZA==
   dependencies:
     "@cspell/dict-data-science" "^1.0.0"
 
@@ -666,9 +666,9 @@
   integrity sha512-4tT2UrL5LBqDwoed9wZ6N3umC4Yhz3W3FloMmiiG4JwmUJWpie0c7lcnUNd4gtMKuDEO4wRVS8B6Xa0uMRsMKg==
 
 "@types/node@^18.0.0":
-  version "18.17.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.17.5.tgz#c58b12bca8c2a437b38c15270615627e96dd0bc5"
-  integrity sha512-xNbS75FxH6P4UXTPUJp/zNPq6/xsfdJKussCWNOnz4aULWIRwMgP1LgaB5RiBnMX1DPCYenuqGZfnIAx5mbFLA==
+  version "18.17.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.17.6.tgz#0296e9a30b22d2a8fcaa48d3c45afe51474ca55b"
+  integrity sha512-fGmT/P7z7ecA6bv/ia5DlaWCH4YeZvAQMNpUhrJjtAhOhZfoxS1VLUgU2pdk63efSjQaOJWdXMuAJsws+8I6dg==
 
 "@types/normalize-package-data@^2.4.1":
   version "2.4.1"
@@ -722,10 +722,10 @@ ajv@^6.12.4:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-alex@^11.0.0:
-  version "11.0.0"
-  resolved "https://registry.yarnpkg.com/alex/-/alex-11.0.0.tgz#2580f9f9ad34e9a3e296da3ffc37ce2e2ee1b859"
-  integrity sha512-YbVCn9CZZDtH5wzGYt0mTergstBhGmm9jnGaG4UmO2nCQLD6swj5eqHIHnNKWAh62EtwItMai3dPNFbux6KOHw==
+alex@^11.0.1:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/alex/-/alex-11.0.1.tgz#ac314ea97ca446b4edabf642762c3ff58febc58e"
+  integrity sha512-rKLBZxD/lvuykdC6XB8ma9YjDl46j9ayHROZUtC1yJ2jlGpoP7RZR1tBBSjtlr260ixIW6iCkqAnHzmti5Q6CQ==
   dependencies:
     "@types/mdast" "^3.0.0"
     "@types/nlcst" "^1.0.0"
@@ -1575,10 +1575,10 @@ eslint-module-utils@^2.8.0:
   dependencies:
     debug "^3.2.7"
 
-eslint-plugin-import@^2.28.0:
-  version "2.28.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.28.0.tgz#8d66d6925117b06c4018d491ae84469eb3cb1005"
-  integrity sha512-B8s/n+ZluN7sxj9eUf7/pRFERX0r5bnFA2dCaLHy2ZeaQEAz0k+ZZkFWRFHJAqxfxQDx6KLv9LeIki7cFdwW+Q==
+eslint-plugin-import@^2.28.1:
+  version "2.28.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.28.1.tgz#63b8b5b3c409bfc75ebaf8fb206b07ab435482c4"
+  integrity sha512-9I9hFlITvOV55alzoKBI+K9q74kv0iKMeY6av5+umsNwayt59fz692daGyjR+oStBQgx6nwR9rXldDev3Clw+A==
   dependencies:
     array-includes "^3.1.6"
     array.prototype.findlastindex "^1.2.2"
@@ -1589,13 +1589,12 @@ eslint-plugin-import@^2.28.0:
     eslint-import-resolver-node "^0.3.7"
     eslint-module-utils "^2.8.0"
     has "^1.0.3"
-    is-core-module "^2.12.1"
+    is-core-module "^2.13.0"
     is-glob "^4.0.3"
     minimatch "^3.1.2"
     object.fromentries "^2.0.6"
     object.groupby "^1.0.0"
     object.values "^1.1.6"
-    resolve "^1.22.3"
     semver "^6.3.1"
     tsconfig-paths "^3.14.2"
 
@@ -2363,7 +2362,7 @@ is-ci@^3.0.1:
   dependencies:
     ci-info "^3.2.0"
 
-is-core-module@^2.12.1, is-core-module@^2.13.0, is-core-module@^2.5.0, is-core-module@^2.8.1:
+is-core-module@^2.13.0, is-core-module@^2.5.0, is-core-module@^2.8.1:
   version "2.13.0"
   resolved "https://registry.yarnpkg.com/is-core-module/-/is-core-module-2.13.0.tgz#bb52aa6e2cbd49a30c2ba68c42bf3435ba6072db"
   integrity sha512-Z7dk6Qo8pOCp3l4tsX2C5ZVas4V+UxwQodwZhLopL91TX8UyyHEXafPcyoeeWuLrwzHcr3igO78wNLwHJHsMCQ==
@@ -2533,9 +2532,9 @@ isexe@^2.0.0:
   integrity sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==
 
 jackspeak@^2.0.3:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/jackspeak/-/jackspeak-2.2.3.tgz#ac63c57c18d254dc78a1f4ecd1cdeb4daeb6e616"
-  integrity sha512-pF0kfjmg8DJLxDrizHoCZGUFz4P4czQ3HyfW4BU0ffebYkzAVlBywp5zaxW/TM+r0sGbmrQdi8EQQVTJFxnGsQ==
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/jackspeak/-/jackspeak-2.3.0.tgz#aa228a94de830f31d4e4f0184427ce91c4ff1493"
+  integrity sha512-uKmsITSsF4rUWQHzqaRUuyAir3fZfW3f202Ee34lz/gZCi970CPZwyQXLGNgWJvvZbvFyzeyGq0+4fcG/mBKZg==
   dependencies:
     "@isaacs/cliui" "^8.0.2"
   optionalDependencies:
@@ -3939,9 +3938,9 @@ registry-url@^6.0.0:
     rc "1.2.8"
 
 rehype-parse@^8.0.0:
-  version "8.0.4"
-  resolved "https://registry.yarnpkg.com/rehype-parse/-/rehype-parse-8.0.4.tgz#3d17c9ff16ddfef6bbcc8e6a25a99467b482d688"
-  integrity sha512-MJJKONunHjoTh4kc3dsM1v3C9kGrrxvA3U8PxZlP2SjH8RNUSrb+lF7Y0KVaUDnGH2QZ5vAn7ulkiajM9ifuqg==
+  version "8.0.5"
+  resolved "https://registry.yarnpkg.com/rehype-parse/-/rehype-parse-8.0.5.tgz#ccffc21e08e288c7846614f8dc1dc23d603a4a80"
+  integrity sha512-Ds3RglaY/+clEX2U2mHflt7NlMA72KspZ0JLUJgBBLpRddBcEw3H8uYZQliQriku22NZpYMfjDdSgHcjxue24A==
   dependencies:
     "@types/hast" "^2.0.0"
     hast-util-from-parse5 "^7.0.0"
@@ -4043,7 +4042,7 @@ resolve-global@^1.0.0:
   dependencies:
     global-dirs "^0.1.1"
 
-resolve@^1.22.3, resolve@^1.22.4:
+resolve@^1.22.4:
   version "1.22.4"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.22.4.tgz#1dc40df46554cdaf8948a486a10f6ba1e2026c34"
   integrity sha512-PXNdCiPqDqeUou+w1C2eTQbNfxKSuMxqTCuvlmmMsk1NWHL5fRrhY6Pl0qEYYc6+QqGClco1Qj8XnjPego4wfg==
