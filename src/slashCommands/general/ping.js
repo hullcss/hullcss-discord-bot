@@ -17,14 +17,16 @@ module.exports = {
 		const seconds = Math.floor(client.uptime / 1000) % 60;
 
 		const embed = new EmbedBuilder()
-			.setColor(0x3FB618)
+			.setColor(0x3fb618)
 			.setFooter({ text: `Called By: ${interaction.user.tag}` })
 			.setTimestamp()
 			.setTitle('Pong!')
 			.setDescription(`${client.ws.ping} ping to host`)
-			.addFields(
-				{ name: 'Uptime', value: `${days}days ${hours}hrs ${minutes}min ${seconds}sec`, inline: true }
-			);
+			.addFields({
+				name: 'Uptime',
+				value: `${days}days ${hours}hrs ${minutes}min ${seconds}sec`,
+				inline: true,
+			});
 		interaction.reply({ embeds: [embed] });
 	},
 };

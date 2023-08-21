@@ -13,11 +13,12 @@ module.exports = {
 	run: async (client, interaction) => {
 		const embed = new EmbedBuilder()
 			.setTitle('Thanks for considering to become a paid member!')
-			.setColor(0x3FB618)
+			.setColor(0x3fb618)
 			.setFooter({ text: `Called By: ${interaction.user.tag}` })
-			.addFields(
-				{name: 'You can purchase from below!', value: 'https://hulluniunion.com/shop?aid=304'}
-			);
+			.addFields({
+				name: 'You can purchase from below!',
+				value: 'https://hulluniunion.com/shop?aid=304',
+			});
 		interaction.reply({ embeds: [embed] });
 	},
 };
