@@ -1,7 +1,4 @@
-const {
-	SlashCommandBuilder,
-	PermissionFlagsBits,
-} = require('discord.js');
+const { SlashCommandBuilder, PermissionFlagsBits } = require('discord.js');
 
 module.exports = {
 	...new SlashCommandBuilder()
