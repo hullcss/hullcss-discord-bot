@@ -16,7 +16,9 @@ module.exports = {
 	 */
 
 	run: async (client, interaction) => {
-		interaction.channel.permissionOverwrites.edit(interaction.guild.everyone, { SendMessages: false });
+		interaction.channel.permissionOverwrites.edit(interaction.guild.everyone, {
+			SendMessages: false,
+		});
 		interaction.reply('Channel has been locked.');
 	},
 };

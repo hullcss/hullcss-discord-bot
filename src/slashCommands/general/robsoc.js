@@ -20,7 +20,7 @@ module.exports = {
 			)
 			.addFields({
 				name: 'You can join them from below!',
-				value: 'https://discord.gg/cMP5CavnK4'
+				value: 'https://discord.gg/cMP5CavnK4',
 			});
 		interaction.reply({ embeds: [embed] });
 	},

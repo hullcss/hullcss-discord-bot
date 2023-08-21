@@ -1,4 +1,8 @@
-const { SlashCommandBuilder, PermissionFlagsBits, ThreadAutoArchiveDuration } = require('discord.js');
+const {
+	SlashCommandBuilder,
+	PermissionFlagsBits,
+	ThreadAutoArchiveDuration,
+} = require('discord.js');
 
 module.exports = {
 	...new SlashCommandBuilder()
@@ -16,7 +20,9 @@ module.exports = {
 	 */
 
 	run: async (client, interaction) => {
-		interaction.channel.permissionOverwrites.edit(interaction.guild.everyone, { SendMessages: true });
+		interaction.channel.permissionOverwrites.edit(interaction.guild.everyone, {
+			SendMessages: true,
+		});
 		interaction.reply('Channel has been unlocked.');
 	},
 };

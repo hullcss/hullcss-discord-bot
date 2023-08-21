@@ -13,9 +13,9 @@ module.exports = {
 	run: async (client, interaction) => {
 		const embed = new EmbedBuilder()
 			.setTitle('Links!')
-			.setColor(0x3FB618)
+			.setColor(0x3fb618)
 			.setFooter({ text: `Called By: ${interaction.user.tag}` })
-			.addFields({name: 'Find us here:', value: 'https://hullcss.org'});
+			.addFields({ name: 'Find us here:', value: 'https://hullcss.org' });
 		interaction.reply({ embeds: [embed] });
 	},
 };
