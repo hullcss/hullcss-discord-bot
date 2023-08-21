@@ -8,6 +8,7 @@
 	"parserOptions": {
 		"ecmaVersion": "latest"
 	},
+	"ignorePatterns": ["*.md"],
 	"rules": {
 		"prettier/prettier": "error",
 		"no-unused-vars": "warn",
