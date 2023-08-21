@@ -36,7 +36,7 @@ module.exports = {
 
 			role.delete(role.id, 'The Nuke Paid Command Was Run. ');
 
-			const channel = client.channels.cache.get('1143157359917682711');
+			const channel = client.channels.cache.get('906167802195484732');
 			channel.setName(`Paid Members: 0`);
 
 			const newRole = interaction.guild.roles.cache.find(
