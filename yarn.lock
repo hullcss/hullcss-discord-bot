@@ -148,7 +148,7 @@
   resolved "https://registry.yarnpkg.com/@cspell/dict-dart/-/dict-dart-2.0.3.tgz#75e7ffe47d5889c2c831af35acdd92ebdbd4cf12"
   integrity sha512-cLkwo1KT5CJY5N5RJVHks2genFkNCl/WLfj+0fFjqNR+tk3tBI1LY7ldr9piCtSFSm4x9pO1x6IV3kRUY1lLiw==
 
-"@cspell/dict-data-science@^1.0.0":
+"@cspell/dict-data-science@^1.0.11":
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/@cspell/dict-data-science/-/dict-data-science-1.0.11.tgz#4eabba75c21d27253c1114b4fbbade0ead739ffc"
   integrity sha512-TaHAZRVe0Zlcc3C23StZqqbzC0NrodRwoSAc8dis+5qLeLLnOCtagYQeROQvDlcDg3X/VVEO9Whh4W/z4PAmYQ==
@@ -284,11 +284,11 @@
   integrity sha512-JSLEdpEYufQ1H+93UHi+axlqQm1fhgK6kpdLHp6uPHu//CsvETcqNVawjB+qOdI/g38JTMw5fBqSd0aGNxa6Dw==
 
 "@cspell/dict-python@^4.0.2":
-  version "4.1.6"
-  resolved "https://registry.yarnpkg.com/@cspell/dict-python/-/dict-python-4.1.6.tgz#06082d76ad5822107eaf7d5d3f6152e9d4a59071"
-  integrity sha512-QcAWSiWMlscFNYyLoag/hUS1oE4FcRIXuM3rXc0JzAhTvsLvl4D8862eyBCm6pQJAkx1HamFg/ftOkTAXlyaZA==
+  version "4.1.7"
+  resolved "https://registry.yarnpkg.com/@cspell/dict-python/-/dict-python-4.1.7.tgz#ace4834d6df3365f50ba15b199c4858438615143"
+  integrity sha512-8GkO7/w1QEpu4Y1GTHGYHrwfc/ZdiBRw7D/BGYCIiOoQPLi0YxMke7wzRC3j246yrzLt28ntDBjr4fB3+uFZtQ==
   dependencies:
-    "@cspell/dict-data-science" "^1.0.0"
+    "@cspell/dict-data-science" "^1.0.11"
 
 "@cspell/dict-r@^2.0.1":
   version "2.0.1"
@@ -420,9 +420,9 @@
     eslint-visitor-keys "^3.3.0"
 
 "@eslint-community/regexpp@^4.6.1":
-  version "4.6.2"
-  resolved "https://registry.yarnpkg.com/@eslint-community/regexpp/-/regexpp-4.6.2.tgz#1816b5f6948029c5eaacb0703b850ee0cb37d8f8"
-  integrity sha512-pPTNuaAG3QMH+buKyBIGJs3g/S5y0caxw0ygM3YyE6yJFySwiGGSzA+mM3KJ8QQvzeLh3blwgSonkFjgQdxzMw==
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/@eslint-community/regexpp/-/regexpp-4.7.0.tgz#96e7c05e738327602ae5942437f9c6b177ec279a"
+  integrity sha512-+HencqxU7CFJnQb7IKtuNBqS6Yx3Tz4kOL8BJXo+JyeiBm5MEX6pO8onXDkjrkCRlfYXS1Axro15ZjVFe9YgsA==
 
 "@eslint/eslintrc@^2.1.2":
   version "2.1.2"
@@ -661,14 +661,14 @@
     "@types/unist" "^2"
 
 "@types/node@*":
-  version "20.5.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.5.1.tgz#178d58ee7e4834152b0e8b4d30cbfab578b9bb30"
-  integrity sha512-4tT2UrL5LBqDwoed9wZ6N3umC4Yhz3W3FloMmiiG4JwmUJWpie0c7lcnUNd4gtMKuDEO4wRVS8B6Xa0uMRsMKg==
+  version "20.5.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.5.2.tgz#02850ed821c8113fd6ed9ae5c744b7f7cd6d6f51"
+  integrity sha512-5j/lXt7unfPOUlrKC34HIaedONleyLtwkKggiD/0uuMfT8gg2EOpg0dz4lCD15Ga7muC+1WzJZAjIB9simWd6Q==
 
 "@types/node@^18.0.0":
-  version "18.17.6"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.17.6.tgz#0296e9a30b22d2a8fcaa48d3c45afe51474ca55b"
-  integrity sha512-fGmT/P7z7ecA6bv/ia5DlaWCH4YeZvAQMNpUhrJjtAhOhZfoxS1VLUgU2pdk63efSjQaOJWdXMuAJsws+8I6dg==
+  version "18.17.7"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.17.7.tgz#8be4a95467c4f2a94cae65f30ee1cf98760525cb"
+  integrity sha512-WJj/p/cIg6zUsxv1n2leZHpvn8hr9TYuLQxAZxZcK/7+5t5ukmJGelOLGOy3L1MLhAO/sapTJGd1V7kvoIuzUg==
 
 "@types/normalize-package-data@^2.4.1":
   version "2.4.1"
@@ -3467,9 +3467,9 @@ nlcst-to-string@^3.0.0:
     "@types/nlcst" "^1.0.0"
 
 node-fetch@^2.6.9:
-  version "2.6.12"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.12.tgz#02eb8e22074018e3d5a83016649d04df0e348fba"
-  integrity sha512-C/fGU2E8ToujUivIO0H+tpQ6HWo4eEmchoPIoXtxCrVghxdKq+QOHqEZW7tuP3KlV3bC8FRMO5nMCC7Zm1VP6g==
+  version "2.6.13"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.13.tgz#a20acbbec73c2e09f9007de5cda17104122e0010"
+  integrity sha512-StxNAxh15zr77QvvkmveSQ8uCQ4+v5FkvNTj0OESmiHu+VRi/gXArXtkWMElOsOUNLtUEvI4yS+rdtOHZTwlQA==
   dependencies:
     whatwg-url "^5.0.0"
 
