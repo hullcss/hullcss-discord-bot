@@ -1,5 +1,20 @@
 # Changelog
 
+## [4.1.0](https://github.com/hullcss/hullcss-discord-bot/compare/v4.0.0...v4.1.0) (2023-08-22)
+
+
+### Features
+
+* Add nukecourserep - related [#7](https://github.com/hullcss/hullcss-discord-bot/issues/7) ([e589752](https://github.com/hullcss/hullcss-discord-bot/commit/e589752edcd9a4eba3c78e6251466e713f6efcbd))
+
+
+### Bug Fixes
+
+* Add arm64 docker support (?) ([157ee15](https://github.com/hullcss/hullcss-discord-bot/commit/157ee15d9be544de76d811230215b179d389db10))
+* Add eslint ignore for md files ([069c23c](https://github.com/hullcss/hullcss-discord-bot/commit/069c23c8b0f8165f1c255a7570e32cb5a3c9cdf6))
+* Add prettier ignore ([966a129](https://github.com/hullcss/hullcss-discord-bot/commit/966a1291d9d52dc28154b530848f7e9b6eb5ed5d))
+* Correct ID in paid member ([c39c668](https://github.com/hullcss/hullcss-discord-bot/commit/c39c6689b3bbdd07ad3c4ad4e80f05aa8c420081))
+
 ## [4.0.0](https://github.com/hullcss/hullcss-discord-bot/compare/v3.0.0...v4.0.0) (2023-08-21)
 
 
