@@ -11,7 +11,7 @@ module.exports = {
 		.setName('welcomemebed')
 		.setDescription('Create the welcome embed')
 		.setDefaultMemberPermissions(
-			PermissionFlagsBits.KickMembers || PermissionFlagsBits.BanMembers
+			PermissionFlagsBits.Administrator
 		),
 
 	/**

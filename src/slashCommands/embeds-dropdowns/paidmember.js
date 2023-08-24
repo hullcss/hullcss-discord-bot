@@ -11,7 +11,7 @@ module.exports = {
 		.setName('paidmemberembed')
 		.setDescription('Create the paid member embed')
 		.setDefaultMemberPermissions(
-			PermissionFlagsBits.KickMembers || PermissionFlagsBits.BanMembers
+			PermissionFlagsBits.Administrator
 		),
 
 	/**

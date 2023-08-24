@@ -11,7 +11,7 @@ module.exports = {
 		.setName('rolesdropdown')
 		.setDescription('Create the role dropdowns')
 		.setDefaultMemberPermissions(
-			PermissionFlagsBits.KickMembers || PermissionFlagsBits.BanMembers
+			PermissionFlagsBits.Administrator
 		),
 
 	/**

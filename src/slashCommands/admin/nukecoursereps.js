@@ -5,7 +5,7 @@ module.exports = {
 		.setName('nukecourserep')
 		.setDescription('Replaces course rep')
 		.setDefaultMemberPermissions(
-			PermissionFlagsBits.KickMembers || PermissionFlagsBits.BanMembers
+			PermissionFlagsBits.Administrator
 		),
 
 	/**
