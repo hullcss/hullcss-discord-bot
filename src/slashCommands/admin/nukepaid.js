@@ -5,7 +5,7 @@ module.exports = {
 		.setName('nukepaid')
 		.setDescription('Replaces paid member')
 		.setDefaultMemberPermissions(
-			PermissionFlagsBits.KickMembers || PermissionFlagsBits.BanMembers
+			PermissionFlagsBits.Administrator
 		),
 
 	/**

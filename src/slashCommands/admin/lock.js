@@ -5,7 +5,7 @@ module.exports = {
 		.setName('lock')
 		.setDescription('Lock a channel')
 		.setDefaultMemberPermissions(
-			PermissionFlagsBits.KickMembers || PermissionFlagsBits.BanMembers
+			PermissionFlagsBits.Administrator
 		),
 
 	/**

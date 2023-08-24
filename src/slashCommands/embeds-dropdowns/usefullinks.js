@@ -9,7 +9,7 @@ module.exports = {
 		.setName('usefullinks')
 		.setDescription('Create the useful links embed')
 		.setDefaultMemberPermissions(
-			PermissionFlagsBits.KickMembers || PermissionFlagsBits.BanMembers
+			PermissionFlagsBits.Administrator
 		),
 
 	/**
