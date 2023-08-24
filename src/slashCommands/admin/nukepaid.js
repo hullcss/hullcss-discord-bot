@@ -4,9 +4,7 @@ module.exports = {
 	...new SlashCommandBuilder()
 		.setName('nukepaid')
 		.setDescription('Replaces paid member')
-		.setDefaultMemberPermissions(
-			PermissionFlagsBits.Administrator
-		),
+		.setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
 
 	/**
 	 *

@@ -8,9 +8,7 @@ module.exports = {
 	...new SlashCommandBuilder()
 		.setName('usefullinks')
 		.setDescription('Create the useful links embed')
-		.setDefaultMemberPermissions(
-			PermissionFlagsBits.Administrator
-		),
+		.setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
 
 	/**
 	 *

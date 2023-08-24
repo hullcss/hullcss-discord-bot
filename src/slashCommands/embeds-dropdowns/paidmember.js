@@ -10,9 +10,7 @@ module.exports = {
 	...new SlashCommandBuilder()
 		.setName('paidmemberembed')
 		.setDescription('Create the paid member embed')
-		.setDefaultMemberPermissions(
-			PermissionFlagsBits.Administrator
-		),
+		.setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
 
 	/**
 	 *

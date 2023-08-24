@@ -10,9 +10,7 @@ module.exports = {
 	...new SlashCommandBuilder()
 		.setName('welcomemebed')
 		.setDescription('Create the welcome embed')
-		.setDefaultMemberPermissions(
-			PermissionFlagsBits.Administrator
-		),
+		.setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
 
 	/**
 	 *

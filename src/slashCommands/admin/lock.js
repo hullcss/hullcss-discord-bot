@@ -4,9 +4,7 @@ module.exports = {
 	...new SlashCommandBuilder()
 		.setName('lock')
 		.setDescription('Lock a channel')
-		.setDefaultMemberPermissions(
-			PermissionFlagsBits.Administrator
-		),
+		.setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
 
 	/**
 	 *

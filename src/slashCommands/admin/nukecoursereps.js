@@ -4,9 +4,7 @@ module.exports = {
 	...new SlashCommandBuilder()
 		.setName('nukecourserep')
 		.setDescription('Replaces course rep')
-		.setDefaultMemberPermissions(
-			PermissionFlagsBits.Administrator
-		),
+		.setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
 
 	/**
 	 *

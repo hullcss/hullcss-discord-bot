@@ -10,9 +10,7 @@ module.exports = {
 	...new SlashCommandBuilder()
 		.setName('rolesdropdown')
 		.setDescription('Create the role dropdowns')
-		.setDefaultMemberPermissions(
-			PermissionFlagsBits.Administrator
-		),
+		.setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
 
 	/**
 	 *

@@ -4,9 +4,7 @@ module.exports = {
 	...new SlashCommandBuilder()
 		.setName('unlock')
 		.setDescription('Unlocks a channel')
-		.setDefaultMemberPermissions(
-			PermissionFlagsBits.Administrator
-		),
+		.setDefaultMemberPermissions(PermissionFlagsBits.Administrator),
 
 	/**
 	 *
