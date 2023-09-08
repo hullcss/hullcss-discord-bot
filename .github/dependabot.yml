@@ -7,13 +7,38 @@ version: 2
 updates:
   - package-ecosystem: 'docker'
     directory: '/'
+    rebase-strategy: 'auto'
     schedule:
       interval: 'weekly'
       time: '08:00'
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+        update-types:
+          - "minor"
+          - "patch"
+      development-dependencies:
+        dependency-type: "development"
+        update-types:
+          - "minor"
+          - "patch"
+
 
   - package-ecosystem: 'github-actions'
     directory: '/'
+    rebase-strategy: 'auto'
     schedule:
       # Check for updates to GitHub Actions every week
       interval: 'weekly'
       time: '08:00'
+    groups:
+      production-dependencies:
+        dependency-type: "production"
+        update-types:
+          - "minor"
+          - "patch"
+      development-dependencies:
+        dependency-type: "development"
+        update-types:
+          - "minor"
+          - "patch"
