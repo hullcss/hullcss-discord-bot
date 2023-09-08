@@ -12,16 +12,8 @@ updates:
       interval: 'weekly'
       time: '08:00'
     groups:
-      production-dependencies:
+      docker-dependecies:
         dependency-type: 'production'
-        update-types:
-          - 'minor'
-          - 'patch'
-      development-dependencies:
-        dependency-type: 'development'
-        update-types:
-          - 'minor'
-          - 'patch'
 
   - package-ecosystem: 'github-actions'
     directory: '/'
@@ -31,5 +23,5 @@ updates:
       interval: 'weekly'
       time: '08:00'
     groups:
-      production-dependencies:
+      github-actions:
         dependency-type: 'production'
