@@ -15,7 +15,7 @@ client.on('guildMemberAdd', async (guildmember) => {
 
 	if (guild == guildmember.guild.id) {
 		welcomechannel.send({
-			content: `Hi **${guildmember.user}**, welcome to the server! Please be sure to fill out your roles in ${roleChannel}, submit a paid member request in ${paidMemberRequestChannel} and introduce yourself ${introductionChannel}`,
+			content: `Hi **${guildmember.user}**, welcome to the server! Please be sure to fill out your roles in ${roleChannel}, submit a paid member request in ${paidMemberRequestChannel} and introduce yourself in ${introductionChannel}`,
 		});
 	}
 });
