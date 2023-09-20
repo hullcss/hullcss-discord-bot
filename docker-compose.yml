@@ -1,0 +1,10 @@
+version: '3'
+services:
+  HullCSSDiscordBot:
+    container_name: HullCSSBot
+    image: kieranr27/hullcss:main
+    restart: unless-stopped
+    ports:
+      - 6001:6001
+    env_file:
+      - PATH-TO-ENV-VAR-FILE
