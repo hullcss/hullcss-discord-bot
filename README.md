@@ -49,6 +49,12 @@ docker run -d \
 kieranr27/hullcss:main
 ```
 
+Or if you are using Docker Compose
+
+```
+docker compose up -d
+```
+
 Using a tool like [Ouroboros](https://github.com/gmt2001/ouroboros), you can automatically update containers without the need for restarts.
 
 ### 👷 Manual
