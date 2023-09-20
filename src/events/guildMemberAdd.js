@@ -3,10 +3,19 @@ const client = require('../index');
 client.on('guildMemberAdd', async (guildmember) => {
 	const welcomechannel = client.channels.cache.get('427875246801027072');
 	const guild = client.guilds.cache.get('427865794467069962');
+	const roleChannel = client.channels.cache.find(
+		(channel) => channel.name === 'roles'
+	);
+	const introductionChannel = client.channels.cache.find(
+		(channel) => channel.name === 'introductions'
+	);
+	const paidMemberRequestChannel = client.channels.cache.find(
+		(channel) => channel.name === 'paid-member-request'
+	);
 
 	if (guild == guildmember.guild.id) {
 		welcomechannel.send({
-			content: `<a:WavingHand:973689926258393169> Welcome! **${guildmember.user}** has just joined the server! Grab some roles from <#427873938333499404> and let us know who you are within <#427874873898041346>`,
+			content: `Hi **${guildmember.user}**, welcome to the server! Please be sure to fill out your roles in ${roleChannel}, submit a paid member request in ${paidMemberRequestChannel} and introduce yourself ${introductionChannel}`,
 		});
 	}
 });
