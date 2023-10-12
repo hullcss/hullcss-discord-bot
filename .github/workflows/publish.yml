@@ -20,7 +20,7 @@ jobs:
 
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v4.0.0
+        uses: actions/checkout@v4.1.0
 
       - name: Log in to Docker Hub
         uses: docker/login-action@343f7c4344506bcbf9b4de18042ae17996df046d
