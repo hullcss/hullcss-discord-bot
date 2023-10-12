@@ -19,6 +19,7 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+		"discord-polls": "^1.1.1",
 		"discord.js": "14.13.0",
 		"dotenv": "^16.3.1",
 		"glob": "^7.2.3",
