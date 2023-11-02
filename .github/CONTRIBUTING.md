@@ -8,7 +8,7 @@ Thank you for contributing to the HullCSS Discord Bot repo, here are some guidel
    - make sure you have GitHub 2FA
    - make a new branch for your commits before merging into main, or still please use PRs (unless you are the primary maintainer)
    - If possible also gpg sign your commits
-4. Please see the [Security Policy](https://github.com/hullcss/CONTRIBUTING/blob/main/SECURITY.md) for detais of what to do if you find any issues that are security related
+4. Please see the [Security Policy](https://github.com/hullcss/.github/blob/main/SECURITY.md) for detais of what to do if you find any issues that are security related
 
 # How to contribute
 

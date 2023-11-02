@@ -40,7 +40,7 @@ module.exports = {
 				},
 				{
 					name: 'Gain Access',
-					value: `To gain access to the server, you will need to have a read of the code of conduct, found here: https://github.com/hullcss/conduct/ and react to the check mark below.\r\n \r\n **All Members, including Community are required to read this policy to access the server.**`,
+					value: `To gain access to the server, you will need to have a read of the code of conduct, found [here](https://github.com/hullcss/.github/blob/main/CODE_OF_CONDUCT.md) and react to the check mark below.\r\n \r\n **All Members, including Community are required to read this policy to access the server.**`,
 				},
 				{
 					name: 'Confirmation',
@@ -52,7 +52,7 @@ module.exports = {
 		const row = new ActionRowBuilder()
 			.addComponents(
 				new ButtonBuilder()
-					.setURL('https://github.com/hullcss/conduct/')
+					.setURL('https://github.com/hullcss/.github/blob/main/CODE_OF_CONDUCT.md')
 					.setLabel('Code of Conduct')
 					.setStyle('Link')
 			)

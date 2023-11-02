@@ -3,7 +3,7 @@
 When using this bot, you are required to:
 
 - Follow [Discord's Terms of Service](https://discord.com/terms).
-- Follow the [HullCSS Code of Conduct](https://github.com/hullcss/conduct).
+- Follow the [HullCSS Code of Conduct](https://github.com/hullcss/.github/blob/main/CODE_OF_CONDUCT.mdt).
 - Do not spam the bot.
 
 ## Contact Us
