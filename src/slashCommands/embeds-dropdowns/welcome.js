@@ -52,7 +52,9 @@ module.exports = {
 		const row = new ActionRowBuilder()
 			.addComponents(
 				new ButtonBuilder()
-					.setURL('https://github.com/hullcss/.github/blob/main/CODE_OF_CONDUCT.md')
+					.setURL(
+						'https://github.com/hullcss/.github/blob/main/CODE_OF_CONDUCT.md'
+					)
 					.setLabel('Code of Conduct')
 					.setStyle('Link')
 			)
