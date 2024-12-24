@@ -1,5 +1,19 @@
 # Changelog
 
+## [4.2.0](https://github.com/hullcss/hullcss-discord-bot/compare/v4.1.0...v4.2.0) (2024-12-24)
+
+
+### Features
+
+* Add member request to intro message [#206](https://github.com/hullcss/hullcss-discord-bot/issues/206) ([79db6a6](https://github.com/hullcss/hullcss-discord-bot/commit/79db6a670e62e7716aaa31af2cf4cf59ffbb8321))
+* Create Poll and Helper commands ([dfa1651](https://github.com/hullcss/hullcss-discord-bot/commit/dfa1651695774d19f0207ca760c52b0b1746ffbb))
+
+
+### Bug Fixes
+
+* Grammar issues ([4837ac6](https://github.com/hullcss/hullcss-discord-bot/commit/4837ac6f2915398801771181e95a0d073a7bde95))
+* updated links ([#223](https://github.com/hullcss/hullcss-discord-bot/issues/223)) ([15bd26d](https://github.com/hullcss/hullcss-discord-bot/commit/15bd26d7a9f02f3afe2aab84128765c19cd46d70))
+
 ## [4.1.0](https://github.com/hullcss/hullcss-discord-bot/compare/v4.0.0...v4.1.0) (2023-08-22)
 
 
