@@ -32,7 +32,7 @@ module.exports = {
 			.addFields(
 				{
 					name: 'Exec Members',
-					value: `President - <@667396400576987147>.\r\nVice President - <@252001272146821120>.\r\nTreasurer - <@207122643223052288>.\r\nSocial Secretary - <@433633207917871104>.\r\nWebmaster - <@609463800818827264>.\r\nSocial Media Coordinator - <@638360627823247390>\r\n\r\n`,
+					value: `President - <@867382918883180554>.\r\nVice President - <@636628781334921251>.\r\nTreasurer - <@465912244404879361>.\r\nSocial Secretary - <@220891885990838272>.\r\nWebmaster - <@609463800818827264>.\r\nSocial Media Coordinator - <@659472571267547175>\r\n\r\n`,
 				},
 				{
 					name: 'Our Site',
